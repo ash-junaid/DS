@@ -1,0 +1,86 @@
+.hero-media__content .btn-yellow:visited {
+ color: #fff;
+}
+
+.text-link {
+  background-color: transparent;
+  font-size: 16px;
+  text-transform: none;
+  padding: 0 0 1.5rem 0;
+  margin: 0;
+  color: #fff;
+  text-align: left;
+}
+
+.text-link:after {
+  content: "\003E";
+  padding-left: 4px;
+}
+
+.text-link:hover {
+  text-decoration: underline;
+  background-color: transparent;
+  color: #fff;
+}
+
+.text-link:active {
+  background-color: transparent;
+  color: #fff;
+}
+
+.text-link:visited {
+  background-color: transparent;
+  color: #fff;
+}
+
+.btn-custom {
+    -moz-border-radius: 2px;
+    -webkit-border-radius: 2px;
+    border-radius: 2px;
+    background-color: #357eeb;
+    border: .125rem solid #357eeb;
+    color: #fff;
+}
+
+.btn-custom:hover {
+    background: #1563d8;
+    border-color: #1563d8;
+    color: #fff;
+}
+
+.hero-media__subtext {
+    margin-bottom: 15px;
+    font-size: 16px;
+}
+
+@media screen and (min-width: 768px) {
+ .text-link {
+   font-size: 18px;
+   color: #666;
+ }
+  
+ .text-link:hover {
+   color: #666;
+ }
+
+.text-link:active {
+  background-color: transparent;
+  color: #666;
+ }
+
+.text-link:visited {
+  background-color: transparent;
+  color: #666 !important;
+ }
+
+  .hero-media__subtext {
+    font-size: 18px;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .hero-media__bg img {
+    right: auto;
+    left: 0;
+  }
+}
