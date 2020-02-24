@@ -1,11 +1,7 @@
 
 <?php
-
-$name1 = $_POST["fname1"];
-$email1 = $_POST["femail1"];
-$age1 = $_POST["fage1"];
-$address1 = $_POST["fadress1"];
-$cnum = $_POST["fcnum1"];
+$name1 = "Percy Jackk";
+$email1 = "percy.jackson2290@gmail.com";
 $curl = curl_init();
 
 curl_setopt_array($curl, array(

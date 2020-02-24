@@ -17,7 +17,7 @@ curl_setopt_array($curl, array(
   CURLOPT_FOLLOWLOCATION => true,
   CURLOPT_HTTP_VERSION => CURL_HTTP_VERSION_1_1,
   CURLOPT_CUSTOMREQUEST => "POST",
-  CURLOPT_POSTFIELDS =>"{\n    \"accountId\": \"7145655\",\n    \"emailSubject\": \"API Example - Populating Data in Templates\",\n    \"templateId\": \"b854e0ee-7c6b-47ac-b80a-b60375be08ed\",\n    \"templateRoles\": [{\n        \"email\": \"ash.junaid29@gmail.com\",\n        \"name\": \"John Doe\",\n        \"roleName\": \"Member\",\n       \n        \"tabs\": {\n            \"textTabs\": [{\n                \"tabLabel\": \"caddress\",\n                \"value\": \"123 Main St. San Francisco, CA 94105\"\n            }, \n            {\n                \"tabLabel\": \"age\",\n                \"value\": \"19\"\n            }]\n        }\n    }],\n    \"status\": \"sent\"\n}",
+  CURLOPT_POSTFIELDS =>"{\n    \"accountId\": \"7145655\",\n    \"emailSubject\": \"API Example - Populating Data in Templates\",\n    \"templateId\": \"b854e0ee-7c6b-47ac-b80a-b60375be08ed\",\n    \"templateRoles\": [{\n        \"email\": \"{$email1}\",\n        \"name\": \"{name1}\",\n        \"roleName\": \"Member\",\n       \n        \"tabs\": {\n            \"textTabs\": [{\n                \"tabLabel\": \"caddress\",\n                \"value\": \"{address1}\"\n            }, \n            {\n                \"tabLabel\": \"age\",\n                \"value\": \"{age1}\"\n            }]\n        }\n    }],\n    \"status\": \"sent\"\n}",
   CURLOPT_HTTPHEADER => array(
     "X-DocuSign-Authentication: {\"Username\":\"stewie.griffin2290@gmail.com\",\"Password\":\"0lWiibvA9gsWYIZu8AnOKZSSYDw=\",\"IntegratorKey\": \"ea059d7d-8c39-4e2a-a17a-cb2079165cd6\"}",
     "Content-Type: application/json"
