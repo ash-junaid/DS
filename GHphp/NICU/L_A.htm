@@ -86,6 +86,14 @@
  text-decoration: none;
  border: none;
 }
+
+    div.right{
+  
+  position: absolute;
+  top: 0px;
+  left: 250px;
+
+}
   </style>
   <script type="text/javascript" src="./Loan Agreements_files/mootools.js"></script>
   <script type="text/javascript" src="./Loan Agreements_files/caption.js"></script>
@@ -629,13 +637,13 @@ window.addEvent("domready", function() {
 
   <label for="memnum">Member Number:</label><br>
   <input type="text" name="memnum"><br>
-
+<div class="right">
   <label for="loannum">Loan Number:</label><br>
   <input type="text" name="loannum"><br>
 
   <label for="faddress1">Current Address:</label><br>
   <input type="text" name="faddress1"><br><br>
-
+</div>
    <input id="submit" type="submit" value="Send Contract via DocuSign">
 </form> 
 
