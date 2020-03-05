@@ -1,0 +1,160 @@
+/* Byond Responsive Descriptive Menu */
+@media all and (min-width: 765px) {
+	nav#mainNav ul {
+		padding: 0;
+	}
+	nav#mainNav ul li {
+		list-style: none;
+	}
+	nav#mainNav #mobileMenuIcon, nav#mainNav div.containerBottomLevelPromo, nav#mainNav div.containerBottomLevelMenu, nav#mainNav ul.mainNavMiddleLevel
+		{
+		display: none;
+	}
+	nav#mainNav {
+		display: block;
+		position: relative;
+		background-color: #f90;
+		height: 75px;
+	}
+	ul.mainNavTopLevel {
+		width: 100%;
+		margin: auto;
+		color: #fff;
+		line-height: 75px;
+	}
+
+	ul.mainNavTopLevel li, nav#mainNav ul.mainNavMiddleLevel li, nav#mainNav ul.mainNavBottomLevel li
+		{
+		vertical-align: middle;
+		float: left;
+		height: 75px;
+	}
+
+	
+	ul.mainNavTopLevel li a, nav#mainNav ul.mainNavMiddleLevel li a, nav#mainNav ul.mainNavBottomLevel li a
+		{
+		color: #fff;
+		display: block;
+		height: 75px;
+		text-decoration: none;
+		padding: 0 20px;
+	}
+
+	ul.mainNavTopLevel li a:hover, ul.mainNavTopLevel li a.active {
+		background-color: #5a5a5a;
+		color: #f90;
+	}
+	nav#mainNav ul.mainNavMiddleLevel li a:hover, nav#mainNav ul.mainNavMiddleLevel li a.active {
+		background-color: #fff;
+		color: #f90;
+	}
+	nav#mainNav ul.mainNavMiddleLevel {
+		position: absolute;
+		background-color: #5a5a5a;
+		top: 75px;
+		width: 100%;
+		margin: auto;
+		color: #f90;
+		height: 75px;
+		line-height: 75px;
+	}
+	nav#mainNav ul.mainNavBottomLevel {
+		position: absolute;
+		background-color: #fff;
+		left: 0;
+		top: 75px;
+		width: 100%;
+		margin: auto;
+		color: #666;
+		line-height: 75px;
+		padding-top: 10px;
+	}
+	nav#mainNav ul.mainNavBottomLevel li {
+		width: 275px;
+		padding-top: 10px;
+	}
+	nav#mainNav ul.mainNavBottomLevel li a {
+		color: #f90;
+		font-size: 26px;
+		line-height: 12px;
+		width: 275px;
+		height: auto;
+	}
+	nav#mainNav ul.mainNavBottomLevel li a span {
+		color: #5a5a5a;
+		font-size: 12px;
+		margin: 0 0 0 40px;
+		display: block;
+	}
+	nav#mainNav ul.mainNavBottomLevel li a span.title {
+		font-weight: bold;
+		margin: -15px 0 0 40px;
+	}
+}
+
+@media all and (max-width: 765px) {
+	ul.mainNavTopLevel, nav#mainNav ul.mainNavMiddleLevel, nav#mainNav div.containerBottomLevelPromo, nav#mainNav div.containerBottomLevelMenu {
+		display: none;
+	}
+	nav#mainNav span#mobileMenuIcon {
+		cursor: pointer;
+		display: block;
+		width: 65px;
+		height: 65px;
+		background: #f90 url('images/menuIcon.gif') top center no-repeat;
+		padding-top: 30px;
+		text-align: center;
+	}
+	ul.mainNavTopLevel {
+		width: 100%;
+		margin: auto;
+		padding: 0;
+		color: #fff;
+		line-height: 30px;
+	}
+	nav#mainNav ul.mainNavMiddleLevel, nav#mainNav ul.mainNavBottomLevel {
+		width: 100%;
+		margin: auto;
+		padding: 0;
+		line-height: 30px;
+	}
+	ul.mainNavTopLevel li, nav#mainNav ul.mainNavMiddleLevel li, nav#mainNav ul.mainNavBottomLevel li
+		{
+		vertical-align: middle;
+		display: block;
+	}
+	ul.mainNavTopLevel li a, nav#mainNav ul.mainNavMiddleLevel li a, nav#mainNav ul.mainNavBottomLevel li a
+		{
+		color: #fff;
+		display: block;
+		height: 30px;
+		text-decoration: none;
+		padding: 0 20px;
+		background-color: #f90;
+	}
+	ul.mainNavTopLevel li a:hover, ul.mainNavTopLevel li a.active {
+		background-color: #5a5a5a;
+		color: #f90;
+	}
+	nav#mainNav ul.mainNavMiddleLevel li a:hover, nav#mainNav ul.mainNavMiddleLevel li a.active {
+		background-color: #fff;
+		color: #f90;
+	}
+	nav#mainNav ul.mainNavMiddleLevel li a {
+		background-color: #5a5a5a;
+	}
+	nav#mainNav ul.mainNavMiddleLevel li a:hover, nav#mainNav ul.mainNavMiddleLevel li a.active {
+		background-color: #fff;
+		color: #f90;
+	}
+	nav#mainNav ul.mainNavBottomLevel li span.desc {
+		display: none;
+	}
+	nav#mainNav ul.mainNavBottomLevel li a[class^="icon-"]:before {
+		content: "";
+	}
+	nav#mainNav ul.mainNavBottomLevel li a {
+		color: #5a5a5a;
+		background-color: #fff;
+	}
+}

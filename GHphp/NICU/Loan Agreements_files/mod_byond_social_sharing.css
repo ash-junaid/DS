@@ -1,0 +1,31 @@
+ul#shareThisList, ul#shareThisList ul {
+    list-style-type: none;
+}
+
+ul#shareThisList a i {
+    width: 20px;
+    text-align: center;
+}
+
+ul#shareThisList {
+    width: 304px;
+    margin: 40px;
+}
+
+#shareThisList li.shareLink {
+    text-align: center;
+}
+
+#shareThisList li ul li {
+    width: 130px;
+    text-align: left;
+}
+
+#shareThisList li.shareLink {
+    width: 170px;
+}
+
+#shareThisList li ul {
+    margin: 0;
+    padding: 0;
+}

@@ -1,0 +1,406 @@
+/* Icons */
+@font-face {
+    font-family: 'icomoon';
+    src: url('fonts/icomoon.eot?xzu3hj');
+    src: url('fonts/icomoon.eot?xzu3hj#iefix') format('embedded-opentype'), url('fonts/icomoon.ttf?xzu3hj') format('truetype'), url('fonts/icomoon.woff?xzu3hj') format('woff'), url('fonts/icomoon.svg?xzu3hj#icomoon') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+/* Creating Menu */
+nav#mainNav {
+    background-color: transparent !important;
+    width:100%;
+    height: 100%;
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    padding-right: 233px;
+}
+#mainNav ul li, #mainNav ol li {
+    margin: 0;
+}
+nav#mainNav ul:after {
+   clear:both;
+    visibility: hidden;
+    height: 0;
+    content: ".";
+    display: block;
+}
+nav#mainNav ul li {
+    list-style: none;
+    height: auto;
+    display: inline-block;
+    height: 100%;
+}
+ul.mainNavTopLevel li a,
+ul.mainNavMiddleLevel li a,
+ul.mainNavBottomLevel li a {
+    color: #fff;
+    display: block;
+    text-decoration: none;
+    padding: 0 25px;
+    font-size: 18px;
+    height: auto;
+    line-height: 64px;
+}
+/* Creating Top level */
+ul.mainNavTopLevel {
+    width: 100%;
+    height: 100%;
+    margin: auto;
+    color: #fff;
+    line-height: 16px;;
+}
+nav#mainNav ul.mainNavTopLevel.topmenu {
+    display: none;
+}
+ul.mainNavTopLevel li a {
+    height: 100%;
+    padding: 0 20px;
+}
+ul.mainNavTopLevel li a:hover,
+ul.mainNavTopLevel li a.active {
+    background-color: #9bc324;
+    color: #ffffff;
+    -webkit-transition: background-color ease 0.3s;
+    -moz-transition: background-color ease 0.3s;
+    -o-transition: background-color ease 0.3s;
+    transition: background-color ease 0.3s;
+}
+/* Creating Mid level */
+nav#mainNav ul.mainNavMiddleLevel {
+    left: 0;
+    height: auto;
+    line-height: 60px;
+    background-color: #444444;
+    color: #ffffff;
+    top: 75px;
+    width: 100%;
+    margin: auto;
+    height: 58px;
+    line-height: 58px;
+}
+nav#mainNav ul.mainNavMiddleLevel li {
+    height: 60px;
+}
+nav#mainNav ul.mainNavMiddleLevel li a {
+    height: auto;
+    line-height: 60px;
+}
+nav#mainNav ul.mainNavMiddleLevel li a.active {
+    box-shadow: none;
+}
+nav#mainNav ul.mainNavMiddleLevel li a:hover,
+nav#mainNav ul.mainNavMiddleLevel li a.active {
+    background-color: #fff;
+    color: #9bc324;
+}
+/* Creating Bottom level */
+.containerBottomLevelMenu {
+    width: 100%;
+    position: absolute;
+    right: 0;
+    height: auto;
+    background: rgba(255, 255, 255, 0.96 );
+    -webkit-box-shadow: 0px 2px 3px 0px rgba(0, 0, 0, 0.2);
+    -moz-box-shadow: 0px 2px 3px 0px rgba(0, 0, 0, 0.2);
+    box-shadow: 0px 2px 3px 0px rgba(0, 0, 0, 0.2);
+}
+nav#mainNav ul.mainNavBottomLevel {
+    background: none;
+    top: 0;
+    position: relative;
+}
+nav#mainNav ul.mainNavBottomLevel li {
+    padding: 0;
+    height: auto;
+    width: 25%;
+    min-height: 150px;
+    display: inline-block;
+    vertical-align: top;
+    float: none;
+}
+
+
+nav#mainNav ul.mainNavBottomLevel li:first-child,
+nav#mainNav ul.mainNavBottomLevel li:nth-child(5) {
+    margin: 0;
+}
+nav#mainNav ul.mainNavBottomLevel li a {
+    padding: 20px;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    width: 100%;
+}
+nav#mainNav ul.mainNavBottomLevel li:hover,
+nav#mainNav ul.mainNavBottomLevel li a:hover {
+    background: #f3f2f2;
+}
+nav#mainNav ul.mainNavBottomLevel li a span.title, nav#mainNav ul.mainNavBottomLevel li a span.desc {
+    margin: 0 0 0 40px;
+}
+nav#mainNav ul.mainNavBottomLevel li a span.title {
+    line-height: 18px;
+    font-size: 16px;
+    color: #0098d8;
+    font-family: 'HelveticaNeueLTStd-Md';
+    font-weight: normal;
+}
+nav#mainNav ul.mainNavBottomLevel li a span.desc {
+    color:#575756;
+    font-size:14px;
+    line-height: 17px;
+    margin-top: 8px;
+}
+
+
+
+/* Creating Icons */
+[class^="icon-"],
+[class*=" icon-"],
+ul#mainNavTopLevel li a:after,
+ul.mainNavTopLevel li a:after {
+    /* use !important to prevent issues with browser extensions that change fonts */
+    font-family: 'icomoon' !important;
+    speak: none;
+    font-style: normal;
+    font-weight: normal;
+    font-variant: normal;
+    text-transform: none;
+    line-height: 1;
+    /* Better Font Rendering =========== */
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+
+ul.mainNavTopLevel li a.active:after {
+    content: '\e927';
+    text-align: center;
+    display: block;
+    z-index: 1;
+    bottom: 5px;
+    text-align: center;
+    color:#9bc324;
+    position:relative;
+}
+
+
+/*ul.mainNavTopLevel li a.active:before {
+content: '';
+position: absolute;
+border-style: solid;
+border-width: 15px 15px 0;
+border-color: #9bc324 transparent;
+display: block;
+width: 0;
+z-index: 1;
+bottom: -15px;
+text-align: center;
+}.
+containerBottomLevelMenu:before {
+    content: '';
+    position: absolute;
+    border-style: solid;
+    border-width: 15px 15px 0;
+    border-color: #9bc324 transparent;
+    display: block;
+    width: 0;
+    z-index: 1;
+    top: 0;
+    text-align: center;
+}*/
+
+nav .containerBottomLevelMenu [class^="icon-"] {
+    font-size: 24px;
+    height: 30px;
+    line-height: 28px;
+    position: absolute;
+    text-transform: none;
+    width: 30px;
+    color: #0098d8;
+}
+nav .containerBottomLevelPromo [class^="icon-"] {
+    font-size: 18px;
+    position: relative;
+    margin-left: 10px;
+    top: 3px;
+}
+
+
+/* Mobile Icons */
+nav#mainNav span#mobileMenuIcon {/* hide the menu icon in module */
+    display: none !important;
+}
+
+
+/* Promo container */
+nav#mainNav div.containerBottomLevelPromo {
+    width: 25%;
+    position: absolute;
+    z-index: 99;
+    left: 0;
+    box-shadow: 0px 4px 0px 1px rgba(0, 0, 0, 0.1);
+    background-color: #9bc324;
+    overflow: hidden;
+    box-sizing: border-box;
+    padding: 0 20px;
+}
+nav#mainNav div.containerBottomLevelPromo h3 {
+    font-weight: normal;
+    color: #fff;
+    font-size: 18px;
+    line-height: 25px;
+}
+nav#mainNav div.containerBottomLevelPromo ul li {
+    padding: 5px 0 0 0;
+    height: auto;
+    color: #fff;
+}
+nav#mainNav div.containerBottomLevelPromo a {
+    color: #fff;
+    height: auto;
+    text-align: left;
+    line-height: 30px;
+    font-size: 16px;
+    padding: 0;
+}
+nav#mainNav div.containerBottomLevelPromo a:hover {
+    background: transparent;
+}
+nav#mainNav ul.mainNavBottomLevel,
+nav#mainNav div.containerBottomLevelPromo {
+    height: auto;
+    min-height: 115px;
+    padding:0;
+}
+nav#mainNav ul.mainNavBottomLevel {
+    font-size: 0;
+}
+
+
+
+
+@media all and (max-width:768px) {
+    nav#mainNav {
+        display: none;
+        background: #0098d8!important;
+        color:#ffffff;
+        padding-right: 0;
+    }
+    nav#mainNav ul li {
+        display:block;
+        position: relative;
+        height: auto;
+        float: none;
+    }
+    nav#mainNav ul.mainNavTopLevel.topmenu {
+        display: block;
+    }
+    ul.mainNavTopLevel, nav#mainNav ul.mainNavMiddleLevel {
+        display: block;
+    }
+    ul.mainNavTopLevel li a,
+    ul.mainNavMiddleLevel li a,
+    ul.mainNavBottomLevel li a {
+        line-height: 24px;
+    }
+    ul.mainNavTopLevel li a {
+        background: #0098d8; 
+        border-bottom: 1px solid #fff;
+        padding: 22px 20px;
+        min-height: 64px;
+    }
+    ul.mainNavTopLevel li a:last-child {
+        border: none;
+    }
+     ul.mainNavTopLevel li a:hover,
+    ul.mainNavTopLevel li a.active {
+        background:#ededed ;
+        color: #0098d8;
+    }
+    ul#mainNavTopLevel li a:after,
+    ul.mainNavTopLevel li a:after {
+        content: "\e902";
+        font-family: 'icomoon';
+        color: #ffffff;
+        float: right;
+        font-size: 25px;
+    }
+    ul#mainNavTopLevel li a.active:after,
+    ul.mainNavTopLevel li a.active:after {
+        content: "\e905";
+        font-family: 'icomoon';
+        color: #0098d8;
+    }
+    ul#mainNavTopLevel.topmenu li a:after,
+    ul.mainNavTopLevel.topmenu li a:after,
+    ul#mainNavTopLevel.topmenu li a.active:after,
+    ul.mainNavTopLevel.topmenu li a.active:after {
+        content: none;
+    }
+    ul#mainNavTopLevel li a:hover:after,
+    ul.mainNavTopLevel li a:hover:after {
+        color: #0098d8;
+    }
+    nav#mainNav ul.mainNavBottomLevel, nav#mainNav div.containerBottomLevelPromo {
+        min-height: inherit;
+    }
+    .containerBottomLevelMenu {
+        position: relative; 
+        top: 0;
+        height: auto;
+        -webkit-box-shadow: none;
+        -moz-box-shadow: none;
+        box-shadow:none;
+    } 
+    nav#mainNav ul.mainNavBottomLevel {
+        padding:0;
+    }
+    nav#mainNav ul.mainNavBottomLevel li {
+        width: 100%;
+        display: block;
+        min-height: inherit;
+        border-bottom: 1px solid #ffffff;
+    }
+    nav#mainNav ul.mainNavMiddleLevel li a, nav#mainNav ul.mainNavBottomLevel li a {
+        background:#575756;
+        color:#ffffff;
+        min-height: 64px;
+        height: auto;
+    }
+    nav#mainNav ul.mainNavBottomLevel li:hover, nav#mainNav ul.mainNavBottomLevel li a:hover {
+        background:#ededed ;
+        color: #0098d8;
+    }
+    ul.mainNavBottomLevel li a:after {
+        content: none;
+    }
+    nav#mainNav ul.mainNavBottomLevel li a span.title {
+        font-family: 'HelveticaNeueLTStd-Roman', Helvetica, Arial;
+        color:#ffffff;
+        margin: 0;
+         line-height: 20px;
+        font-size: 18px;  
+    }
+    nav#mainNav ul.mainNavBottomLevel li:hover a span.title {
+        color:#0098d8;
+       
+    }
+    nav#mainNav ul.mainNavBottomLevel li a span.desc, nav .containerBottomLevelMenu [class^="icon-"] {
+        display:none;
+    }
+    
+   
+    .mod-button-scam-alert i {
+        top: 25px;
+    }
+}
+
+@media all and (max-width: 640px) {
+    .mod-button-scam-alert i {
+        top: 0;
+    }
+ 
+   
+}
