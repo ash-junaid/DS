@@ -5,7 +5,7 @@ $email1 = $_POST["femail1"];
 $mem1 = $_POST["memnum"];
 $address1 = $_POST["faddress1"];
 $lnum = $_POST["loannum"];
-
+$redirect_url = "http://localhost:8888/DS/GHphp/NICU/L_A.htm";
 
 
 $curl = curl_init();
@@ -29,5 +29,6 @@ curl_setopt_array($curl, array(
 $response = curl_exec($curl);
 
 curl_close($curl);
+header("Location: $redirect_url");
 //echo $response;
 ?>
