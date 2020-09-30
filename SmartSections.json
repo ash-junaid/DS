@@ -1,0 +1,60 @@
+{
+  "recipients": {
+    "signers": [{
+        "email": "ron.weasley2290@gmail.com",
+        "name": "Ron Weasley",
+        "recipientId": 1,
+        "roleName": "Signer1",
+        "routingOrder": 1
+    }],
+    "carbonCopies": [
+      {
+        "email": "marko.manager2290@gmail.com",
+        "name": "Demo Updates",
+        "recipientId": "3",
+        "roleName": "CC Person",
+        "routingOrder": 1
+        
+      }]
+  
+  },
+  "emailSubject": "DocuSign API - Signature Request on Document Call",
+  "documents":[{  
+    	"name": "blank1.pdf",
+        "documentId": "1",
+        "htmlDefinition":{
+            "source":"<html><body><div>
+            	<h1>SAMPLE TEXT HERE</h1><p>
+            	Modify this information to make it unique for this scenario
+				$startCollapse$
+				Here's an example of some smart section text to include
+				$endCollapse$
+				Please make sure your address is current or update this information to the current address: 
+				<input data-ds-type='text' value = 'Junaid Address 123'/>
+			   
+<br>
+    
+    	
+<br></br>
+				
+				Name: <ds-fullname  name='Name' /><br>Signature: <ds-signature /><br>Date Signed: <ds-date-signed /></div></body></html>",
+              "displayAnchors": [{
+                  "startAnchor": "$startCollapse$",
+                  "endAnchor": "$endCollapse$",
+                  "removeStartAnchor": true,
+                  "removeEndAnchor": true,
+                  "caseSensitive": true,
+                  "displaySettings": {
+                		"display": "collapsed",
+                		"displayLabel": "Smart Section Label",
+                    	"collapsibleSettings": {
+                    		"labelStyle": "font-weight:bold ; color:blue",
+                    		"arrowClosed": "down",
+                    		"arrowOpen": "up"
+                    	}
+                  }
+              }]
+        }
+  }],
+  "status": "sent"
+}
