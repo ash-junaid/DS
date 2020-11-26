@@ -66,7 +66,8 @@ $sign_url=$resp3[3];
 
 
 //echo "$response_url_temp";
-//header("Location: $sign_url");
-echo $sign_url;
+//echo $sign_url;
+header("Location: $sign_url");
+
 
 ?>
