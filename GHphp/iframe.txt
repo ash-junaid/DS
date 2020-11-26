@@ -40,3 +40,12 @@
 </form> 
 
 </div>
+
+
+.click_my-frame{
+display:inline-block;
+    vertical-align:top;
+}
+.click_my-frame:focus + div{
+display:block;
+}
