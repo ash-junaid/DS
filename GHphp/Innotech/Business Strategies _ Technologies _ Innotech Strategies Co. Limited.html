@@ -37,7 +37,13 @@
     
     
     
-
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<script>
+$("b11").click(function(){
+    var iframe = $("#ifm");
+    iframe.attr("src", iframe.data("src")); 
+});
+</script>
     
 
 
@@ -7527,7 +7533,7 @@ text-align: center;
 </div><div data-packed="true" style="width: 780px; pointer-events: none;" class="txtNew" id="comp-k90zbfxy2" bis_skin_checked="1"><p class="font_8" style="text-align:center; line-height:1.75em;"><span class="color_15">
 <script type="text/javascript">  
 function showIFrame() {  
-var iframe = document.getElementById("myiframe");  
+var iframe = document.getElementById("my-frame");  
 iframe.style.visibility="visible";
 }  
 </script>
@@ -7549,11 +7555,11 @@ iframe.style.visibility="visible";
   <label for="faddress1">Current Address:</label><br>
   <input type="text" name="faddress1"><br><br>
 
-   <input type="submit" class = "button11" value="Sign Now">
+   <input id = "b11" type="submit" class = "button11" value="Sign Now">
 </form> 
 
 
-<iframe name="my-frame" height="1000" width="1000" src="itemb_sign.php"></iframe>
+<iframe id = "ifm" name="my-frame" height="1000" width="1000" src="itemb_sign.php"></iframe>
 
 </div>
     
