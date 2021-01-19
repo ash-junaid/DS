@@ -68,7 +68,13 @@ curl_setopt_array($curl, array(
   CURLOPT_FOLLOWLOCATION => true,
   CURLOPT_HTTP_VERSION => CURL_HTTP_VERSION_1_1,
   CURLOPT_CUSTOMREQUEST => 'POST',
-  CURLOPT_POSTFIELDS =>"{\n  \"returnUrl\": \"http://localhost/returnUrl\",\n  \"authenticationMethod\": \"None\",\n  \"email\": \"{$email1}\",\n  \"userName\": \"{$name1}\",\n  \"clientUserId\": 1\n}",
+   CURLOPT_POSTFIELDS =>'{
+  "authenticationMethod": "email",
+  "email": "{{Signer Email}}",
+  "returnUrl": "https://www.google.com",
+  "userName": "{{Signer Name}}",
+  "clientUserId": "1"
+}',
   CURLOPT_HTTPHEADER => array(
     'Accept: application/json',
     'Authorization: Bearer eyJ0eXAiOiJNVCIsImFsZyI6IlJTMjU2Iiwia2lkIjoiNjgxODVmZjEtNGU1MS00Y2U5LWFmMWMtNjg5ODEyMjAzMzE3In0.AQoAAAABAAUABwAACMidIbzYSAgAAEjrq2S82EgCAM2-DigiKy1Lk5aiHJOP1HsVAAEAAAAYAAEAAAAFAAAADQAkAAAANTBiZGI4OTItOWM3Yi00NGNkLWI2Y2MtZDk0YTg2Y2U2MzJhIgAkAAAANTBiZGI4OTItOWM3Yi00NGNkLWI2Y2MtZDk0YTg2Y2U2MzJhMAAA5J0uILzYSDcA4C-CYxk0m0W2Buyqt8xSSg.af5w0o6zujfoJ68hhbztmLjGc_pySXZ8eiur4rXyWxnF9A1QvXLcIzqf0HwUIlbNHTQPI8cs99Aq88pLn2IeFXP4nhIq0d5ISUJRTpzfvZQtyC8ZCEhSUrSGjWmTsMY1dpkhoZol44yYMv-FxL-O4rqVoCHL9oyDraFjYWTtHLEA3Qz3PQdqRFSUR-7bO2WuDSOh4qJl473CcZIRrUepUKjitBDDFCInhoiKMfXYMwNCYGCqsBG_Po7rHj4SE-cXs9rBIL6wJeM9N1jMmVFohr-VPuCebyPIJXpGyJcYsG2zGi88by7A1MpkvkG1jDdKnudb3-3m2Jx5-GQ9hBMlFw',
