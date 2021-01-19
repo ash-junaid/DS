@@ -54,7 +54,7 @@ $pieces2 = explode("\"", $response_url_temp);
 $resp2=$pieces2[0];
 //echo $response;
 //echo $resp2;
-<?php
+
 
 $curl = curl_init();
 $uri2 = "https://demo.docusign.net/restapi/v2.1/accounts/7145655/envelopes/".$resp2."/views/recipient";
