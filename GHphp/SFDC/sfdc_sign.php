@@ -25,6 +25,38 @@ curl_setopt_array($curl, array(
 
 $response = curl_exec($curl);
 
+curl_close($curl);
 
+$pieces = explode("envelopes/", $response);
+$response_url_temp=$pieces[1];
+$pieces2 = explode("\"", $response_url_temp);
+$resp2=$pieces2[0];
+//echo $response;
+////echo $resp2;
+$curl = curl_init();
+$uri2 = "https://demo.docusign.net/restapi//v2.1/accounts/4fbaccb3-876d-42f1-bac3-5677d9067c5f/envelopes/".$resp2."/views/recipient";
+echo $uri2;
+curl_setopt_array($curl, array(
+  CURLOPT_URL => $uri2,
+  CURLOPT_RETURNTRANSFER => true,
+  CURLOPT_ENCODING => "",
+  CURLOPT_MAXREDIRS => 10,
+  CURLOPT_TIMEOUT => 0,
+  CURLOPT_FOLLOWLOCATION => true,
+  CURLOPT_HTTP_VERSION => CURL_HTTP_VERSION_1_1,
+  CURLOPT_CUSTOMREQUEST => "POST",
+  CURLOPT_POSTFIELDS =>"{\n  \"returnUrl\": \"http://localhost/returnUrl\",\n  \"authenticationMethod\": \"None\",\n  \"email\": \"{$email1}\",\n  \"userName\": \"{$name1}\",\n  \"clientUserId\": 1\n}",
+
+  CURLOPT_HTTPHEADER => array(
+    'X-DocuSign-Authentication: {"Username":"{{username}}","Password":"{{password}}","IntegratorKey": "{{clientId}}"}',
+    'Content-Type: application/json',
+    'Cookie: acctLogin=True; BIGipDocuSign_Demo=!0JujKagN/XbCe4SU4V8NQL3lsxkc/fTyqOu+sv0AjvzK6IKTwNm4dgnZgXgyKRXwYeS1nZ0/N+J0zAA='
+  ),
+));
+
+$response = curl_exec($curl);
+
+curl_close($curl);
+//echo $response;
 
 ?>
