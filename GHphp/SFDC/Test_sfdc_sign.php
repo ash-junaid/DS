@@ -60,9 +60,11 @@ $response = curl_exec($curl);
 curl_close($curl);
 $resp3 = explode("\"", $response);
 $sign_url=$resp3[3];
-<iframe src="<?php echo $sign_url; ?>" width="100%" height="100%" ></iframe>
+
 //echo "$response_url_temp";
 //header("Location: $sign_url");
 //echo $sign_url;
 
 ?>
+
+<iframe src="<?php echo $sign_url; ?>" width="100%" height="100%" ></iframe>
