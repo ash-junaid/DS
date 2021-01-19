@@ -54,20 +54,26 @@ $pieces2 = explode("\"", $response_url_temp);
 $resp2=$pieces2[0];
 //echo $response;
 //echo $resp2;
+<?php
+
 $curl = curl_init();
-$uri2 = "https://demo.docusign.net/restapi/v2.1/accounts/10899188/envelopes/".$resp2."/views/recipient";
-//echo $uri2;
-header("Location: $uri2");
+
 curl_setopt_array($curl, array(
-  CURLOPT_URL => $uri2,
+  CURLOPT_URL => 'https://demo.docusign.net/restapi/envelopes/".$resp2."/views/recipient',
   CURLOPT_RETURNTRANSFER => true,
-  CURLOPT_ENCODING => "",
+  CURLOPT_ENCODING => '',
   CURLOPT_MAXREDIRS => 10,
   CURLOPT_TIMEOUT => 0,
   CURLOPT_FOLLOWLOCATION => true,
   CURLOPT_HTTP_VERSION => CURL_HTTP_VERSION_1_1,
-  CURLOPT_CUSTOMREQUEST => "POST",
-  CURLOPT_POSTFIELDS =>"{\n  \"returnUrl\": \"http://localhost/returnUrl\",\n  \"authenticationMethod\": \"None\",\n  \"email\": \"{$email1}\",\n  \"userName\": \"{$name1}\",\n  \"clientUserId\": 1\n}",
+  CURLOPT_CUSTOMREQUEST => 'POST',
+  CURLOPT_POSTFIELDS =>'{
+  "returnUrl": "http://localhost/returnUrl",
+  "authenticationMethod": "None",
+  "email": "jo.winters2290@gmail.com",
+  "userName": "Jo Customer",
+  "clientUserId": 1
+}',
   CURLOPT_HTTPHEADER => array(
     'Accept: application/json',
     'Authorization: Bearer eyJ0eXAiOiJNVCIsImFsZyI6IlJTMjU2Iiwia2lkIjoiNjgxODVmZjEtNGU1MS00Y2U5LWFmMWMtNjg5ODEyMjAzMzE3In0.AQoAAAABAAUABwAACMidIbzYSAgAAEjrq2S82EgCAM2-DigiKy1Lk5aiHJOP1HsVAAEAAAAYAAEAAAAFAAAADQAkAAAANTBiZGI4OTItOWM3Yi00NGNkLWI2Y2MtZDk0YTg2Y2U2MzJhIgAkAAAANTBiZGI4OTItOWM3Yi00NGNkLWI2Y2MtZDk0YTg2Y2U2MzJhMAAA5J0uILzYSDcA4C-CYxk0m0W2Buyqt8xSSg.af5w0o6zujfoJ68hhbztmLjGc_pySXZ8eiur4rXyWxnF9A1QvXLcIzqf0HwUIlbNHTQPI8cs99Aq88pLn2IeFXP4nhIq0d5ISUJRTpzfvZQtyC8ZCEhSUrSGjWmTsMY1dpkhoZol44yYMv-FxL-O4rqVoCHL9oyDraFjYWTtHLEA3Qz3PQdqRFSUR-7bO2WuDSOh4qJl473CcZIRrUepUKjitBDDFCInhoiKMfXYMwNCYGCqsBG_Po7rHj4SE-cXs9rBIL6wJeM9N1jMmVFohr-VPuCebyPIJXpGyJcYsG2zGi88by7A1MpkvkG1jDdKnudb3-3m2Jx5-GQ9hBMlFw',
@@ -78,12 +84,13 @@ curl_setopt_array($curl, array(
 
 $response = curl_exec($curl);
 
-
 curl_close($curl);
+//echo $response;
+
 $resp3 = explode("\"", $response);
 $sign_url=$resp3[3];
 
-//echo "$sign_url";
+echo "$sign_url";
 //header("Location: $sign_url");
 //echo $response;
 
