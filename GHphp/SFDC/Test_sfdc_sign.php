@@ -1,18 +1,4 @@
-<!DOCTYPE html>
-<html>
-    <head>
-        <title>My Example</title>
-        <link rel="stylesheet" href="styles.css">
-    </head>
-    <body>
-     <h2>APAC SE - Embedded Signing to Salesforce</h2>
 
-     <h3> Please fill in the folloiwng details to start signing: </h3>
-
-
-
-    </body>
-</html>
 <?php
 $name1 = $_POST["fname1"];
 $email1 = $_POST["femail1"];
@@ -82,4 +68,19 @@ $sign_url=$resp3[3];
 //echo $sign_url
 
 ?>
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>My Example</title>
+        <link rel="stylesheet" href="styles.css">
+    </head>
+    <body>
+     <h2>APAC SE - Embedded Signing to Salesforce</h2>
+
+     <h3> Please fill in the folloiwng details to start signing: </h3>
+
+
+
+    </body>
+</html>
 <iframe src="<?php echo $sign_url; ?>" width="100%" height="100%" ></iframe>
