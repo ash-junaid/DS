@@ -65,7 +65,7 @@ $sign_url=$resp3[3];
 //echo "$response_url_temp";
 
 //header("Location: $sign_url");
-echo $sign_url
+//echo $sign_url
 
 ?>
 <!DOCTYPE html>
@@ -83,5 +83,5 @@ echo $sign_url
 
     </body>
 
-<iframe src="<?php echo $sign_url; ?>" width="100%" height="100%" ></iframe>
+<iframe src="https://stackoverflow.com/questions/61349979/display-random-url-inside-iframe" width="100%" height="100%" ></iframe>
 </html>
