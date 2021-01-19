@@ -48,7 +48,13 @@ curl_setopt_array($curl, array(
   CURLOPT_FOLLOWLOCATION => true,
   CURLOPT_HTTP_VERSION => CURL_HTTP_VERSION_1_1,
   CURLOPT_CUSTOMREQUEST => "POST",
-  CURLOPT_POSTFIELDS =>"{\n  \"returnUrl\": \"http://localhost/returnUrl\",\n  \"authenticationMethod\": \"None\",\n  \"email\": \"{$email1}\",\n  \"userName\": \"{$name1}\",\n  \"clientUserId\": 1\n}",
+  CURLOPT_POSTFIELDS =>'{
+  "authenticationMethod": "email",
+  "email": "{{Signer Email}}",
+  "returnUrl": "https://www.google.com",
+  "userName": "{{Signer Name}}",
+  "clientUserId": "1"
+}',
   CURLOPT_HTTPHEADER => array(
     "X-DocuSign-Authentication: {\"Username\":\"stewie.griffin2290@gmail.com\",\"Password\":\"0lWiibvA9gsWYIZu8AnOKZSSYDw=\",\"IntegratorKey\": \"ea059d7d-8c39-4e2a-a17a-cb2079165cd6\"}",
     "Content-Type: application/json"
