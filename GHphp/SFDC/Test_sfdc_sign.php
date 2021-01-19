@@ -9,22 +9,7 @@
 
      <h3> Please fill in the folloiwng details to start signing: </h3>
 
-<form action="Test_sfdc_sign.php" method="post">
 
-  <label for="fname1">Full Name:</label><br>
-  <input type="text" name="fname1"><br>
-
-  <label for="femail1">Email:</label><br>
-  <input type="text" name="femail1"><br>
-
-  <label for="fage1">ABN</label><br>
-  <input type="text" name="fage1"><br>
-
-  <label for="faddress1">Current Address:</label><br>
-  <input type="text" name="faddress1"><br><br>
-
-   <input type="submit" value="Sign Now">
-</form> 
 
     </body>
 </html>
@@ -92,8 +77,9 @@ $resp3 = explode("\"", $response);
 $sign_url=$resp3[3];
 
 //echo "$response_url_temp";
-echo '<iframe src="'. $sign_url .'" />';
+
 //header("Location: $sign_url");
 //echo $sign_url
 
 ?>
+<iframe src="<?php echo $sign_url; ?>" width="100%" height="100%" ></iframe>;
