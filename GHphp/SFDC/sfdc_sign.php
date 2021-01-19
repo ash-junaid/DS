@@ -71,8 +71,8 @@ curl_setopt_array($curl, array(
   CURLOPT_POSTFIELDS =>'{
   "returnUrl": "http://localhost/returnUrl",
   "authenticationMethod": "None",
-  "email": "jo.winters2290@gmail.com",
-  "userName": "Jo Customer",
+  "email": $email1,
+  "userName": $name1,
   "clientUserId": 1
 }',
   CURLOPT_HTTPHEADER => array(
