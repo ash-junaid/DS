@@ -1,3 +1,33 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>My Example</title>
+        <link rel="stylesheet" href="styles.css">
+    </head>
+    <body>
+     <h2>APAC SE - Embedded Signing to Salesforce</h2>
+
+     <h3> Please fill in the folloiwng details to start signing: </h3>
+
+<form action="Test_sfdc_sign.php" method="post">
+
+  <label for="fname1">Full Name:</label><br>
+  <input type="text" name="fname1"><br>
+
+  <label for="femail1">Email:</label><br>
+  <input type="text" name="femail1"><br>
+
+  <label for="fage1">ABN</label><br>
+  <input type="text" name="fage1"><br>
+
+  <label for="faddress1">Current Address:</label><br>
+  <input type="text" name="faddress1"><br><br>
+
+   <input type="submit" value="Sign Now">
+</form> 
+
+    </body>
+</html>
 <?php
 $name1 = $_POST["fname1"];
 $email1 = $_POST["femail1"];
