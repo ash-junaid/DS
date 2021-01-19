@@ -70,9 +70,9 @@ curl_setopt_array($curl, array(
   CURLOPT_CUSTOMREQUEST => 'POST',
    CURLOPT_POSTFIELDS =>'{
   "authenticationMethod": "email",
-  "email": "{{Signer Email}}",
+  "email": "{$email1}",
   "returnUrl": "https://www.google.com",
-  "userName": "{{Signer Name}}",
+  "userName": "{$name1}",
   "clientUserId": "1"
 }',
   CURLOPT_HTTPHEADER => array(
