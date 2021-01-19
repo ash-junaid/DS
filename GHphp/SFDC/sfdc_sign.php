@@ -53,7 +53,7 @@ $response_url_temp=$pieces[1];
 $pieces2 = explode("\"", $response_url_temp);
 $resp2=$pieces2[0];
 //echo $response;
-////echo $resp2;
+echo $resp2;
 $curl = curl_init();
 $uri2 = "https://demo.docusign.net/restapi/v2.1/accounts/10899188/envelopes/".$resp2."/views/recipient";
 //echo $uri2;
@@ -82,7 +82,7 @@ curl_close($curl);
 $resp3 = explode("\"", $response);
 $sign_url=$resp3[3];
 
-echo "$sign_url";
+//echo "$sign_url";
 //header("Location: $sign_url");
 //echo $response;
 
