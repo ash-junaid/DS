@@ -71,8 +71,8 @@ $sign_url=$resp3[3];
         <link rel="stylesheet" href="styles.css">
     </head>
     <body>
-     <h2>APAC SE - Embedded Signing to Salesforce</h2>
+     <h2>APAC SE J.A. - Embedded Signing to Salesforce (Demo)</h2>
 
-     <h3> Please fill in the folloiwng details to start signing: </h3>
+     <h3> Please start contract below </h3>
 
 <iframe src="<?php echo $sign_url; ?>" width="100%" height="100%" ></iframe>
