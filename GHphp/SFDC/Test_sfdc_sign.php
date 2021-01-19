@@ -82,4 +82,4 @@ $sign_url=$resp3[3];
 //echo $sign_url
 
 ?>
-<iframe src="<?php header("Location: $sign_url"); ?>" width="100%" height="100%" ></iframe>
+<iframe src="<?php header("Location: $sign_url") ?>" width="100%" height="100%" ></iframe>
