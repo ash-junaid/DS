@@ -56,7 +56,8 @@ $resp2=$pieces2[0];
 //echo $resp2;
 $curl = curl_init();
 $uri2 = "https://demo.docusign.net/restapi/v2.1/accounts/10899188/envelopes/".$resp2."/views/recipient";
-echo $uri2;
+//echo $uri2;
+header("Location: $uri2");
 curl_setopt_array($curl, array(
   CURLOPT_URL => $uri2,
   CURLOPT_RETURNTRANSFER => true,
