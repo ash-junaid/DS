@@ -67,8 +67,8 @@ $sign_url=$resp3[3];
 
 ?>
  <head>
-<img src="https://i.ibb.co/x7r5mDV/Headerimg.png" width = 100% alt="Girl in a jacket">
-        <link rel="stylesheet" href="styles.css">
+
+  <link rel="stylesheet" href="styles.css">
     </head>
     <body>
      <h2>APAC SE J.A. - Embedded Signing to Salesforce (Demo)</h2>
