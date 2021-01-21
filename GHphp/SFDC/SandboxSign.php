@@ -67,7 +67,7 @@ $sign_url=$resp3[3];
 
 ?>
  <head>
-<img src="https://i.ibb.co/x7r5mDV/Headerimg.png" width = 100% alt="Girl in a jacket">
+        <title>My Example</title>
         <link rel="stylesheet" href="styles.css">
     </head>
     <body>
