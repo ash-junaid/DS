@@ -68,7 +68,7 @@ $sign_url=$resp3[3];
 ?>
  <head>
 
-  <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="SBstyles.css">
     </head>
     <body>
      <h2>APAC SE J.A. - Embedded Signing to Salesforce (Demo)</h2>
