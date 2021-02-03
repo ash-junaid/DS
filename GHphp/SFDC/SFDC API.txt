@@ -1,0 +1,61 @@
+SFDC API.txt
+
+IK: 50bdb892-9c7b-44cd-b6cc-d94a86ce632a
+
+Secret Key: c1161241-e16a-4a9c-bbb3-09dc6d117de6
+
+Redirect URI: https://docusign.github.io/postman-esign-api-collection/
+
+Auth Code:
+https://account-d.docusign.com/oauth/auth?response_type=code&scope=signature&client_id=50bdb892-9c7b-44cd-b6cc-d94a86ce632a&redirect_uri=https://docusign.github.io/postman-esign-api-collection/
+
+JWT:
+https://account-d.docusign.com/oauth/auth?response_type=code&scope=signature%20impersonation&client_id=50bdb892-9c7b-44cd-b6cc-d94a86ce632a&redirect_uri=https://docusign.github.io/postman-esign-api-collection/
+
+Public Key:
+-----BEGIN PUBLIC KEY-----
+MIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAjJ6LDK6RCAkHSY0oco0Q
+X3QmYSPgWibn5w57rkm/6GAWH3UEciaKh0jzrJoru1oGzmTuZg4yJYBqi/LXOwue
+s8vwBiCXQHFmRoUCYrX/onu3Idbk03SIR/nlksJnEZ0/760ZdWizjMBc+HDxQZDx
+PTsjiVG4fAYyIPlt5B478sPqMQ/tPCJoe2O0Lo0ik/A2zS4YzzDztziqowgsfhR0
+C/mv5pGfiMJ+jYl7IN3l42/V70NBy/j9KvAk+5OsFefMeQFwoZY7Sv6AIgaqrCLr
+hOVfuM0/cH7+Da6j0VzvnGuQBhAIFyy7z6CG7SEW9QjcRKLify7WXLuyGcHHzzOx
+BwIDAQAB
+
+Private Key:
+-----BEGIN RSA PRIVATE KEY-----
+MIIEowIBAAKCAQEAjJ6LDK6RCAkHSY0oco0QX3QmYSPgWibn5w57rkm/6GAWH3UE
+ciaKh0jzrJoru1oGzmTuZg4yJYBqi/LXOwues8vwBiCXQHFmRoUCYrX/onu3Idbk
+03SIR/nlksJnEZ0/760ZdWizjMBc+HDxQZDxPTsjiVG4fAYyIPlt5B478sPqMQ/t
+PCJoe2O0Lo0ik/A2zS4YzzDztziqowgsfhR0C/mv5pGfiMJ+jYl7IN3l42/V70NB
+y/j9KvAk+5OsFefMeQFwoZY7Sv6AIgaqrCLrhOVfuM0/cH7+Da6j0VzvnGuQBhAI
+Fyy7z6CG7SEW9QjcRKLify7WXLuyGcHHzzOxBwIDAQABAoIBABCQws+5JuO78IxV
+IT0xagrcq4LJD65/I9Wf6qkTDhUJcMG+7smlya77RJ2CQgGdruyUjlMefADX+nVH
+I9zUVxtWPI30O+0/Dq3jEG9hgl55VY8aejWA5mcYRNe/qBW2oSgSi8u9jF1Z8fng
+kENJmGm+tEaChomxzyj8SVpUx3onNoda3CD+igYipFeeD82uAyLrnvt417PMucdA
+mJhCBXsWkI0RY2QAlTDOvAsz0HeoEeNjozxPPvg2EgHUTt+cVSbPrcW3+iSRo5Mj
+IxECk/aW5qS4ObGFfxSrb0oDfHQ1JAkw96aBxtOFmqYSi91voygenuoTTM+qKTXA
+jUrO5JECgYEAx0HRCWNSTW+yZrpplwJ+GibTANeH66soUdrrsExYc+cSOqkT58KY
+8g6tAhivjzXwcyg2q8mkxdSRZBwQi9NVRthwiz0Sxb7B0hknA/47wWbb1z6MyxxP
+s2yP0A39fUkslJt80EExUIAbhLc/1YteYZtU0dzherEAbV15Ik5IX7ECgYEAtKnu
+ezQgMwexBX29zRCQm3M3iM140C/cXklme7wiTZlFtNEykMiItQ1QAHhHJu40gzU3
+o1ttKJ3PCY9O2E8Q9o9pgEM/TngRPMoQgNtw/RUjgUtz89CjhnEXAM+Iajpj/tZS
+y+OpkrFn209KFo5W0TaIxVuVqfWLD2tmzXsTwjcCgYBIsHX1msoXfbvzReXnNP2T
+xL4M/JOVIadf1SFN+0v5XD6GL9AXKCJri3cJ4L+K2v6QxAbNvI3jrZwsjSBsIfhm
+E+dapDkI8oH6hzp4dnKOJ1vjtene3sEkj2IXYEMtRViCDgcGYgH/f/yJ+d/Lo0AX
+E3dp585J1/Bz9TmPjkdQwQKBgECREtgZUwCp2Qw7Wh/1sZi83rYXqPvOfxV7ahMC
+s8fD5XOv6EByStlZ/qOMWPGC5GWYGWBahnKjo6CpBOatq0RTEMN0RSXIJ3DwTmGf
+C4yHh37n9nLGuAqOVEhH41sDr0UeV8zienIg0RtCBRp2mHSA5vSRvLVXOfGy0rTR
+LciVAoGBAI2LKTHVKey5/qD5HCjRLG62WM1TawNtwUA13qEJ9vkrng6fk5SYkdIf
+92CAwV4/AK1MObSJynOisAroAw+rvip/0YWcgmc4eNn8wqE6MeDxFJlwkBbqcdsg
+KDhItDPNT2F65ST/xFAmtNOng7qKCsHGSUAB0v4WfiZIMpT/mMPb
+
+
+
+{
+"iss" : 50bdb892-9c7b-44cd-b6cc-d94a86ce632a,
+"sub": 280ebecd-2b22-4b2d-9396-a21c938fd47b,
+"exp": 1611287100,
+"aud": "account-d.docusign.com",
+"scope": "signature_impersonation"
+}
