@@ -17,9 +17,9 @@ curl_setopt_array($curl, array(
   CURLOPT_POSTFIELDS =>"{\n    \"accountId\": \"10899188\",\n    \"emailSubject\": \"API Example - Populating Data SFDC\",\n    \"templateId\": \"369e0018-da77-4050-a8df-db0d77f21f4c\",\n    \"templateRoles\": [{\n        \"email\": \"{$email1}\",\n        \"name\": \"{$name1}\",\n        \"clientUserId\": 1,\n        \"roleName\": \"Customer\",\n        \"tabs\": {\n            \"textTabs\": [{\n                \"tabLabel\": \"Current Address\",\n               \"value\": \"{$address1}\"\n            }, \n            {\n                \"tabLabel\": \"ABN\",\n                \"value\": \"{$age1}\"\n            }]\n        }\n    }],\n    \"status\": \"sent\"\n}",
   CURLOPT_HTTPHEADER => array(
     'Accept: application/json',
-    'Authorization: Bearer eyJ0eXAiOiJNVCIsImFsZyI6IlJTMjU2Iiwia2lkIjoiNjgxODVmZjEtNGU1MS00Y2U5LWFmMWMtNjg5ODEyMjAzMzE3In0.AQsAAAABAAUABwAAQwxQwsvYSAgAAIMvXgXM2EgCAM2-DigiKy1Lk5aiHJOP1HsVAAEAAAAYAAEAAAAFAAAADQAkAAAANTBiZGI4OTItOWM3Yi00NGNkLWI2Y2MtZDk0YTg2Y2U2MzJhIgAkAAAANTBiZGI4OTItOWM3Yi00NGNkLWI2Y2MtZDk0YTg2Y2U2MzJhEgABAAAACwAAAGludGVyYWN0aXZlMAAACLRHwsvYSDcA4C-CYxk0m0W2Buyqt8xSSg.moYwHyTBk5cstxa9LKZyCHX2uOTO2gur5xmXnJG3dH6TfXa0N7XRtNZwu8RbCAGI4WtW2Ussm0jqZgs23pCrh4f3e2iC2xIT0NYP9dwRF7D0Vs91X8wkawmoIVmqigpoMTDankQ1AHj_blvelzjxhJsbo7TEO1BhsaNQofYnG49OpG7-SuN5AZifHJh-mNUfNTzWTOq0E6Cw8iGA9bNyrUETDtAdYCbPSCAE-LfMxzsr80IyS8g7c4iFEQuXLfzBu3Tza4n6xtSw9NZ63ghIhtRftfTJsvQ4BMxJiBYxsCWFJwsMT2x1Dhg1lsQwyAVLsnMiVLUeNwK8zPGIiUkHFQ',
+    'Authorization: Bearer eyJ0eXAiOiJNVCIsImFsZyI6IlJTMjU2Iiwia2lkIjoiNjgxODVmZjEtNGU1MS00Y2U5LWFmMWMtNjg5ODEyMjAzMzE3In0.AQoAAAABAAUABwAAMEDRd87YSAgAAHBj37rO2EgCAM2-DigiKy1Lk5aiHJOP1HsVAAEAAAAYAAEAAAAFAAAADQAkAAAANTBiZGI4OTItOWM3Yi00NGNkLWI2Y2MtZDk0YTg2Y2U2MzJhIgAkAAAANTBiZGI4OTItOWM3Yi00NGNkLWI2Y2MtZDk0YTg2Y2U2MzJhMACADSGJd87YSDcA4C-CYxk0m0W2Buyqt8xSSg.ruSaoittviQchpWzeJwUO5-EU4UgrB4od43bduzkwP4dK-_c5nAptsiSlZZiLSTQqid4noJbMrsLqgLi20XY5Kcbm7WNJEOoydQIQMov_yk6yur3e-GJnHZfs1GwYEQRgFscRUXpAoxHWGf_S7qSH8-YA5hI6NRhrdjkB7gCBK7-MmgQenPaXLYOLrGHM_5vmPoxYXP-K2sEZlypWeQftpG_Y4Dn-uCnCYCEjk0tTxSsePrmZZoBsCB26adnxWM6LfcqL9Fmn02kQRPP6JNkLHcVXwPCKIAmioAmQn_gx4OpBUqz7n683FaV5o0rtR1MHMiP3jCtxDlmKx8UycsAbg',
     'Content-Type: application/json',
-    'Cookie: acctLogin=True; BIGipDocuSign_Demo=!0JujKagN/XbCe4SU4V8NQL3lsxkc/fTyqOu+sv0AjvzK6IKTwNm4dgnZgXgyKRXwYeS1nZ0/N+J0zAA='
+    'Cookie: acctLogin=True'
   ),
 ));
 
@@ -49,9 +49,9 @@ curl_setopt_array($curl, array(
 
  CURLOPT_HTTPHEADER => array(
     'Accept: application/json',
-    'Authorization: Bearer eyJ0eXAiOiJNVCIsImFsZyI6IlJTMjU2Iiwia2lkIjoiNjgxODVmZjEtNGU1MS00Y2U5LWFmMWMtNjg5ODEyMjAzMzE3In0.AQsAAAABAAUABwAAQwxQwsvYSAgAAIMvXgXM2EgCAM2-DigiKy1Lk5aiHJOP1HsVAAEAAAAYAAEAAAAFAAAADQAkAAAANTBiZGI4OTItOWM3Yi00NGNkLWI2Y2MtZDk0YTg2Y2U2MzJhIgAkAAAANTBiZGI4OTItOWM3Yi00NGNkLWI2Y2MtZDk0YTg2Y2U2MzJhEgABAAAACwAAAGludGVyYWN0aXZlMAAACLRHwsvYSDcA4C-CYxk0m0W2Buyqt8xSSg.moYwHyTBk5cstxa9LKZyCHX2uOTO2gur5xmXnJG3dH6TfXa0N7XRtNZwu8RbCAGI4WtW2Ussm0jqZgs23pCrh4f3e2iC2xIT0NYP9dwRF7D0Vs91X8wkawmoIVmqigpoMTDankQ1AHj_blvelzjxhJsbo7TEO1BhsaNQofYnG49OpG7-SuN5AZifHJh-mNUfNTzWTOq0E6Cw8iGA9bNyrUETDtAdYCbPSCAE-LfMxzsr80IyS8g7c4iFEQuXLfzBu3Tza4n6xtSw9NZ63ghIhtRftfTJsvQ4BMxJiBYxsCWFJwsMT2x1Dhg1lsQwyAVLsnMiVLUeNwK8zPGIiUkHFQ',
+    'Authorization: Bearer eyJ0eXAiOiJNVCIsImFsZyI6IlJTMjU2Iiwia2lkIjoiNjgxODVmZjEtNGU1MS00Y2U5LWFmMWMtNjg5ODEyMjAzMzE3In0.AQoAAAABAAUABwAAMEDRd87YSAgAAHBj37rO2EgCAM2-DigiKy1Lk5aiHJOP1HsVAAEAAAAYAAEAAAAFAAAADQAkAAAANTBiZGI4OTItOWM3Yi00NGNkLWI2Y2MtZDk0YTg2Y2U2MzJhIgAkAAAANTBiZGI4OTItOWM3Yi00NGNkLWI2Y2MtZDk0YTg2Y2U2MzJhMACADSGJd87YSDcA4C-CYxk0m0W2Buyqt8xSSg.ruSaoittviQchpWzeJwUO5-EU4UgrB4od43bduzkwP4dK-_c5nAptsiSlZZiLSTQqid4noJbMrsLqgLi20XY5Kcbm7WNJEOoydQIQMov_yk6yur3e-GJnHZfs1GwYEQRgFscRUXpAoxHWGf_S7qSH8-YA5hI6NRhrdjkB7gCBK7-MmgQenPaXLYOLrGHM_5vmPoxYXP-K2sEZlypWeQftpG_Y4Dn-uCnCYCEjk0tTxSsePrmZZoBsCB26adnxWM6LfcqL9Fmn02kQRPP6JNkLHcVXwPCKIAmioAmQn_gx4OpBUqz7n683FaV5o0rtR1MHMiP3jCtxDlmKx8UycsAbg',
     'Content-Type: application/json',
-    'Cookie: acctLogin=True; BIGipDocuSign_Demo=!0JujKagN/XbCe4SU4V8NQL3lsxkc/fTyqOu+sv0AjvzK6IKTwNm4dgnZgXgyKRXwYeS1nZ0/N+J0zAA='
+    'Cookie: acctLogin=True'
   ),
 ));
 
