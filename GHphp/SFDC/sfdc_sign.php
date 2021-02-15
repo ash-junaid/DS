@@ -17,7 +17,7 @@ curl_setopt_array($curl, array(
   CURLOPT_POSTFIELDS =>"{\n    \"accountId\": \"10899188\",\n    \"emailSubject\": \"API Example - Populating Data SFDC\",\n    \"templateId\": \"369e0018-da77-4050-a8df-db0d77f21f4c\",\n    \"templateRoles\": [{\n        \"email\": \"{$email1}\",\n        \"name\": \"{$name1}\",\n        \"clientUserId\": 1,\n        \"roleName\": \"Customer\",\n        \"tabs\": {\n            \"textTabs\": [{\n                \"tabLabel\": \"Current Address\",\n               \"value\": \"{$address1}\"\n            }, \n            {\n                \"tabLabel\": \"ABN\",\n                \"value\": \"{$age1}\"\n            }]\n        }\n    }],\n    \"status\": \"sent\"\n}",
   CURLOPT_HTTPHEADER => array(
     'Accept: application/json',
-    'Authorization: Bearer eyJ0eXAiOiJNVCIsImFsZyI6IlJTMjU2Iiwia2lkIjoiNjgxODVmZjEtNGU1MS00Y2U5LWFmMWMtNjg5ODEyMjAzMzE3In0.AQoAAAABAAUABwAAIvZ-_s7YSAgAAGIZjUHP2EgCAM2-DigiKy1Lk5aiHJOP1HsVAAEAAAAYAAEAAAAFAAAADQAkAAAANTBiZGI4OTItOWM3Yi00NGNkLWI2Y2MtZDk0YTg2Y2U2MzJhIgAkAAAANTBiZGI4OTItOWM3Yi00NGNkLWI2Y2MtZDk0YTg2Y2U2MzJhMAAAfjV3_M7YSDcA4C-CYxk0m0W2Buyqt8xSSg.IPaoDC6A5U9NZTqXYU1rCPYP_zUUTT1D3jbsB_nUlFwa9soyruJsDTHtTgkrwxMFWAvtD2qBdlVdAcjtUSRLrC4uWY6_KuptkRgHv_58yXS0Kr1yfuIhiweZO1M7IPkfb9oq9-eBzj9Rl59ML8jBCMjiZ8kvjCTEa4sT3sFY38HGheJ0SoOaz8xs0NRM2W87aiOmjhJ5IQUQT2np-mEr5T1TnK9vfFelArBGy3sWfm8IXOPIEu8F3GoLqNac1QqeWLxLwnlIzdq9wimRZpiqNz8P9n0_ni6c-atG3J3vrQBtkirsQ0PrNZfn4w-LAtTqNFB496ZQXW0xDbTdZLDT2A',
+    'Authorization: Bearer eyJ0eXAiOiJNVCIsImFsZyI6IlJTMjU2Iiwia2lkIjoiNjgxODVmZjEtNGU1MS00Y2U5LWFmMWMtNjg5ODEyMjAzMzE3In0.AQoAAAABAAUABwCAvkGvBs_YSAgAgP5kvUnP2EgCAM2-DigiKy1Lk5aiHJOP1HsVAAEAAAAYAAEAAAAFAAAADQAkAAAANTBiZGI4OTItOWM3Yi00NGNkLWI2Y2MtZDk0YTg2Y2U2MzJhIgAkAAAANTBiZGI4OTItOWM3Yi00NGNkLWI2Y2MtZDk0YTg2Y2U2MzJhMACAYcleBM_YSDcA4C-CYxk0m0W2Buyqt8xSSg.XmusYNKTJcqqoREHyqP7TCW-6QHufjXCxYIK3LOK08Qua3FreRvOTHYYQ8Zi7EWQE-ysUx9D1cR7Mw3iGITzmxMF64eAC611JX9XnRGE0PluJNV8UYHGhziXfN141-DvgjQVt8Wxdrw6QLBrMlbIqFHjx_SpA03jX9mWjOXowH_26JXDwwj0q9UvM-QkTnBwZkumxwa_mFsVJaSc_O-55Yu53U0znG6cVUMmPg_W9CgYvGdKGcxs2WmC3z79sJZ-sHexgiKsl4kvjwidxj7iPumwwXdI9Vldsfnb_Gw390muAobuWNoZy1CWK5A7mVGsAgru0Z1fE2gbFM3gEeDfAg',
     'Content-Type: application/json',
     'Cookie: acctLogin=True'
   ),
@@ -47,9 +47,9 @@ curl_setopt_array($curl, array(
   CURLOPT_CUSTOMREQUEST => "POST",
   CURLOPT_POSTFIELDS =>"{\n  \"returnUrl\": \"http://localhost:8888/MAMP/\",\n  \"authenticationMethod\": \"None\",\n  \"email\": \"{$email1}\",\n  \"userName\": \"{$name1}\",\n  \"clientUserId\": 1\n}",
 
- CURLOPT_HTTPHEADER => array(
+CURLOPT_HTTPHEADER => array(
     'Accept: application/json',
-    'Authorization: Bearer eyJ0eXAiOiJNVCIsImFsZyI6IlJTMjU2Iiwia2lkIjoiNjgxODVmZjEtNGU1MS00Y2U5LWFmMWMtNjg5ODEyMjAzMzE3In0.AQoAAAABAAUABwAAIvZ-_s7YSAgAAGIZjUHP2EgCAM2-DigiKy1Lk5aiHJOP1HsVAAEAAAAYAAEAAAAFAAAADQAkAAAANTBiZGI4OTItOWM3Yi00NGNkLWI2Y2MtZDk0YTg2Y2U2MzJhIgAkAAAANTBiZGI4OTItOWM3Yi00NGNkLWI2Y2MtZDk0YTg2Y2U2MzJhMAAAfjV3_M7YSDcA4C-CYxk0m0W2Buyqt8xSSg.IPaoDC6A5U9NZTqXYU1rCPYP_zUUTT1D3jbsB_nUlFwa9soyruJsDTHtTgkrwxMFWAvtD2qBdlVdAcjtUSRLrC4uWY6_KuptkRgHv_58yXS0Kr1yfuIhiweZO1M7IPkfb9oq9-eBzj9Rl59ML8jBCMjiZ8kvjCTEa4sT3sFY38HGheJ0SoOaz8xs0NRM2W87aiOmjhJ5IQUQT2np-mEr5T1TnK9vfFelArBGy3sWfm8IXOPIEu8F3GoLqNac1QqeWLxLwnlIzdq9wimRZpiqNz8P9n0_ni6c-atG3J3vrQBtkirsQ0PrNZfn4w-LAtTqNFB496ZQXW0xDbTdZLDT2A',
+    'Authorization: Bearer eyJ0eXAiOiJNVCIsImFsZyI6IlJTMjU2Iiwia2lkIjoiNjgxODVmZjEtNGU1MS00Y2U5LWFmMWMtNjg5ODEyMjAzMzE3In0.AQoAAAABAAUABwCAvkGvBs_YSAgAgP5kvUnP2EgCAM2-DigiKy1Lk5aiHJOP1HsVAAEAAAAYAAEAAAAFAAAADQAkAAAANTBiZGI4OTItOWM3Yi00NGNkLWI2Y2MtZDk0YTg2Y2U2MzJhIgAkAAAANTBiZGI4OTItOWM3Yi00NGNkLWI2Y2MtZDk0YTg2Y2U2MzJhMACAYcleBM_YSDcA4C-CYxk0m0W2Buyqt8xSSg.XmusYNKTJcqqoREHyqP7TCW-6QHufjXCxYIK3LOK08Qua3FreRvOTHYYQ8Zi7EWQE-ysUx9D1cR7Mw3iGITzmxMF64eAC611JX9XnRGE0PluJNV8UYHGhziXfN141-DvgjQVt8Wxdrw6QLBrMlbIqFHjx_SpA03jX9mWjOXowH_26JXDwwj0q9UvM-QkTnBwZkumxwa_mFsVJaSc_O-55Yu53U0znG6cVUMmPg_W9CgYvGdKGcxs2WmC3z79sJZ-sHexgiKsl4kvjwidxj7iPumwwXdI9Vldsfnb_Gw390muAobuWNoZy1CWK5A7mVGsAgru0Z1fE2gbFM3gEeDfAg',
     'Content-Type: application/json',
     'Cookie: acctLogin=True'
   ),
