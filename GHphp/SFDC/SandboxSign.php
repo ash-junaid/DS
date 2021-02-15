@@ -15,7 +15,7 @@ curl_setopt_array($curl, array(
   CURLOPT_HTTP_VERSION => CURL_HTTP_VERSION_1_1,
   CURLOPT_CUSTOMREQUEST => 'POST',
   CURLOPT_POSTFIELDS =>"{\n    \"accountId\": \"10899188\",\n    \"emailSubject\": \"API Example - Populating Data SFDC\",\n    \"templateId\": \"369e0018-da77-4050-a8df-db0d77f21f4c\",\n    \"templateRoles\": [{\n        \"email\": \"{$email1}\",\n        \"name\": \"{$name1}\",\n        \"clientUserId\": 1,\n        \"roleName\": \"Customer\",\n        \"tabs\": {\n            \"textTabs\": [{\n                \"tabLabel\": \"Current Address\",\n               \"value\": \"{$address1}\"\n            }, \n            {\n                \"tabLabel\": \"ABN\",\n                \"value\": \"{$age1}\"\n            }]\n        }\n    }],\n    \"status\": \"sent\"\n}",
-   CURLOPT_HTTPHEADER => array(
+CURLOPT_HTTPHEADER => array(
     'Accept: application/json',
     'Authorization: Bearer eyJ0eXAiOiJNVCIsImFsZyI6IlJTMjU2Iiwia2lkIjoiNjgxODVmZjEtNGU1MS00Y2U5LWFmMWMtNjg5ODEyMjAzMzE3In0.AQoAAAABAAUABwCACoDAVNHYSAgAgEqjzpfR2EgCAM2-DigiKy1Lk5aiHJOP1HsVAAEAAAAYAAEAAAAFAAAADQAkAAAANTBiZGI4OTItOWM3Yi00NGNkLWI2Y2MtZDk0YTg2Y2U2MzJhIgAkAAAANTBiZGI4OTItOWM3Yi00NGNkLWI2Y2MtZDk0YTg2Y2U2MzJhMAAAN1hfVNHYSDcA4C-CYxk0m0W2Buyqt8xSSg.RAnXJsj6khMLYMuj_B0lLYOyMNBlPoScZFDZW-WFDxXhlLNsM5u2OMQ-GuSpeDXKIfHlbGFaHWvqbUIps2F2Mof9s1vxMlJqBSrBSeC35wssr5nEzWnRgeeg-GVvpHTMOtB0_mUxT_ipMuEhog28-TLf6iAWHCSLbg7IOT1hEDnG2fj885Njtwwu9jF1CExQyubvdmaHwg6lFKhMTI_QfYCQY8V-za9e50HCeSPKICfdYacRj8q7HYTT9pjbjjr7eK719luOD5I7UoqjhD8a6rtmuAxV5pKtWJS-HT2nHy5dZxow4TvqJKUcqg91ebSI-Kb6o_0L1wHoFW7bzOnhqg',
     'Content-Type: application/json',
@@ -47,7 +47,7 @@ curl_setopt_array($curl, array(
   CURLOPT_CUSTOMREQUEST => "POST",
   CURLOPT_POSTFIELDS =>"{\n  \"returnUrl\": \"http://localhost:8888/MAMP/\",\n  \"authenticationMethod\": \"None\",\n  \"email\": \"{$email1}\",\n  \"userName\": \"{$name1}\",\n  \"clientUserId\": 1\n}",
 
- CURLOPT_HTTPHEADER => array(
+CURLOPT_HTTPHEADER => array(
     'Accept: application/json',
     'Authorization: Bearer eyJ0eXAiOiJNVCIsImFsZyI6IlJTMjU2Iiwia2lkIjoiNjgxODVmZjEtNGU1MS00Y2U5LWFmMWMtNjg5ODEyMjAzMzE3In0.AQoAAAABAAUABwCACoDAVNHYSAgAgEqjzpfR2EgCAM2-DigiKy1Lk5aiHJOP1HsVAAEAAAAYAAEAAAAFAAAADQAkAAAANTBiZGI4OTItOWM3Yi00NGNkLWI2Y2MtZDk0YTg2Y2U2MzJhIgAkAAAANTBiZGI4OTItOWM3Yi00NGNkLWI2Y2MtZDk0YTg2Y2U2MzJhMAAAN1hfVNHYSDcA4C-CYxk0m0W2Buyqt8xSSg.RAnXJsj6khMLYMuj_B0lLYOyMNBlPoScZFDZW-WFDxXhlLNsM5u2OMQ-GuSpeDXKIfHlbGFaHWvqbUIps2F2Mof9s1vxMlJqBSrBSeC35wssr5nEzWnRgeeg-GVvpHTMOtB0_mUxT_ipMuEhog28-TLf6iAWHCSLbg7IOT1hEDnG2fj885Njtwwu9jF1CExQyubvdmaHwg6lFKhMTI_QfYCQY8V-za9e50HCeSPKICfdYacRj8q7HYTT9pjbjjr7eK719luOD5I7UoqjhD8a6rtmuAxV5pKtWJS-HT2nHy5dZxow4TvqJKUcqg91ebSI-Kb6o_0L1wHoFW7bzOnhqg',
     'Content-Type: application/json',
