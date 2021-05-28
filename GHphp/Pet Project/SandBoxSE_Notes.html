@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script>
+
+    function checkinput() {
+        var jtechfit, jtechcomp, jcsrec, jcpro, jsku, jdac, jsolution, jothers;
+        jdate = document.getElementById("date").value;
+        jtechfit = document.getElementById("techfit").value;
+        jtechdetails = document.getElementById("techdetails").value;
+        jtechcomp = document.getElementById("techcomp").value;
+        jcsrec = document.getElementById("csrec").value;
+        jcpro = document.getElementById("cpro").value;
+        jsku = document.getElementById("sku").value;
+        jdac = document.getElementById("dac").value;
+        jsolution = document.getElementById("solution").value;
+        jothers = document.getElementById("others").value;
+        document.getElementById("output").value = "## SE: Junaid Ashraf: " + jdate + " ##" + "\r\n" + "Technical Fit: " + jtechfit + "\r\n" + "Technical Complexity: " + jtechcomp + " - " + jtechdetails + "\r\n" + "CS Recommendation: " + jcsrec + "\r\n" + "Current Process: " + jcpro + "\r\n" + "SKU Recommendation: " + jsku + "\r\n" + "DAC Products: " + jdac + "\r\n" + "Solution Overview: " + jsolution +  "\r\n" + "Other Notes: " + jothers + "\r\n" + "## SE NOTE ##";
+      }
+
+      function copyOutputText() {
+        const output = document.getElementById("output");
+        output.focus();
+        output.select();
+        document.execCommand("copy");
+        alert("Copied to clipboard!");
+      }
+      
+     function clearform() {
+  document.getElementById("myform").reset();
+}
+
+    </script>
+<style>
+
+</style>
+  <img src="https://i.ibb.co/98Zv6bp/DS-Logo.png" width = 20% alt="DSLogo2">
+        <link rel="stylesheet" href="SEStyles.css">
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <link rel="stylesheet" type="text/css" href="//fonts.googleapis.com/css?family=Maven+Pro" />
+  </head>
+
+  <body>
+<p>
+  <label class = "label" for="date">Date :</label>
+<input type="text" id="date">
+</p>
+<script type="text/javascript"> 
+var today = new Date();
+var dd = String(today.getDate()).padStart(2, '0');
+var mm = String(today.getMonth() + 1).padStart(2, '0'); //January is 0!
+var yyyy = today.getFullYear();
+
+today = dd + '/' + mm + '/' + yyyy;
+document.getElementById("date").setAttribute('value',today);
+
+
+</script>
+<div class="container">
+    <form id="myform" onsubmit="return false">
+
+<label class = "label" for="techfit">Technical Fit :</label>
+<select id="techfit" name="Tech_Fit">
+    <option value="A">A - Great</option>
+    <option value="B">B - Fair</option>
+    <option value="C">C - Just OK</option>
+    <option value="D">D - Bad fit for DocuSign</option>
+
+  </select>
+      
+      </p>
+      <p>
+      <label class = "label" for="techcomp">Technical Complexity :</label>
+    <select id="techcomp" name="Tech_Complexity">
+    <option value="Low">Low</option>
+    <option value="Medium">Medium</option>
+    <option value="High">High</option>
+    </select>
+    </p>
+    <label class = "label" for="techdetails">Details :</label>
+    <input type="text" name="Tech_Details" id="techdetails" value="" />
+      
+      <p>
+                <label class = "label" for="csrec">CS Recommendation :</label>
+         <select id="csrec" name="CS_Rec">
+    <option value="Adoption Consulting Lite">AC Lite</option>
+    <option value="Adoption Consulting">AC (Full)</option>
+    <option value="Pro Serv">Pro Serv - Engage EM</option>
+  </select>
+
+        
+      </p>
+        <p>
+          <label class = "label" for="cpro">Current Process :</label>
+         <input type="text" name="Current_Process" id="cpro" value="" />
+      </p>
+        <p>
+        <label class = "label" for="sku">SKU :</label>
+         <select id="sku" name="SKU">
+    <option value="Standard">Standard</option>
+    <option value="BusPro">Business Pro</option>
+    <option value="Enterprise">Enterprise</option>
+  </select>
+      </p>
+      <p>
+         <label class = "label" for="dac">Other DAC products (Gen, Neg, etc.) :</label>
+        <input type="text" name="DAC" id="dac" value="" />
+      </p>
+
+        <p>
+          <label class = "label" for="solution">Solution Overview:</label>
+    <input type="text" name="Sol_Overview" id="solution" value="" />
+      </p>
+        <p>
+           <label class = "label" for="others">Other Notes :</label>
+         <input type="text" name="Other" id="others" value="" />
+      </p>
+      <button class = "button1" onclick="checkinput()">Create</button>
+   <button class = "button3" onclick="clearform()">Clear</button>
+    </form>
+  </div>
+    <div class = "SENotes">
+      <textarea
+        id="output"
+        readonly="true"
+        style="
+          width: 500px;
+          height: 400px;
+          border: 1px solid black;
+          margin-top: 20px;
+          margin-bottom: 20px;
+          font-family: Arial, Helvetica, sans-serif;
+          font-size: 1.2em;
+          resize: none;"
+      ></textarea>
+       <button class = "button2" onclick="copyOutputText()">Copy</button>
+
+    </div>
+     </body>
+</html>

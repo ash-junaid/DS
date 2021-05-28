@@ -1,0 +1,62 @@
+body {
+    background-color: #F3F2F2;
+    color: azure;
+    font-size: 1em;
+    font-family: "Maven Pro";
+}
+.label {
+  color: #020032;
+}
+
+.container {
+  width: 500px;
+  clear: both;
+}
+
+.container input {
+  width: 100%;
+  clear: both;
+}
+.container select {
+  width: 100%;
+  clear: both;
+}
+    .SENotes {
+  position: relative;
+  bottom: 590px;
+  left: 550px;
+        
+}
+
+.button2 {
+  font-size: 18px;
+  font-family: "Maven Pro";
+  background: #009CDB;
+  padding: 10px 10px; 
+  text-align: center; 
+  width: 160px; 
+  position: absolute;
+  top: 430px;
+  left: 155px;
+}
+.button1 {
+  font-size: 18px;
+  font-family: "Maven Pro";
+  background: #009CDB;
+  padding: 10px 10px; 
+  text-align: center; 
+  width: 160px; 
+  position: absolute;
+  left: 10px;
+}
+
+.button3 {
+  font-size: 18px;
+  font-family: "Maven Pro";
+  background: #FA6971;
+  padding: 10px 10px; 
+  text-align: center; 
+  width: 160px; 
+  position: relative;
+  left: 200px;
+}

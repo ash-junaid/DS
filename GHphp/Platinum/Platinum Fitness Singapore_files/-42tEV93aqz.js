@@ -1,3 +1,0 @@
-if (self.CavalryLogger) { CavalryLogger.start_js(["gjy6+"]); }
-
-__d("MqttProtocolClient",[],(function(a,b,c,d,e,f){"use strict";__p&&__p();a=function(){__p&&__p();function a(a){this.endpoint=a,this.clientId="mqttwsclient"}var b=a.prototype;b.connect=function(a){};b.disconnect=function(){};b.isConnected=function(){return!1};b.subscribe=function(a){};b.unsubscribe=function(a){};b.publish=function(a,b,c){return 1};return a}();e.exports=a}),null);
