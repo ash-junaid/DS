@@ -1,8 +1,9 @@
 <!DOCTYPE html>
 <html>
-    <head>
+
+<head>
     <style>
-.button2 {
+        .button2 {
   font-size: 15px;
   font-family: Arial, Helvetica, sans-serif;
   color: rgb(0, 0, 0);
@@ -14,35 +15,28 @@
 
 
 </style>
-   <img src="https://i.ibb.co/f4KHnz2/HeaderN.png" width = 100% alt="Girl in a jacket">
+    <img src="https://i.ibb.co/f4KHnz2/HeaderN.png" width=100% alt="Girl in a jacket">
+    <link rel="stylesheet" href="SBstyles.css">
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+</head>
 
-        <link rel="stylesheet" href="SBstyles.css">
-        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-    </head>
-    <body>
-     <h2>APAC SE J.A. - Embedded Signing to Salesforce</h2>
+<body>
+    <h2>APAC SE J.A. - Embedded Signing to Salesforce</h2>
+    <h3> Please fill in the following details to get started:</h3>
+    <form action="SFDC_Sign.php" method="post">
+        <label for="fname1">Full Name:</label><br>
+        <input type="text" name="fname1"><br>
+        <label for="femail1">Email:</label><br>
+        <input type="text" name="femail1"><br>
+        <label for="fage1">ABN</label><br>
+        <input type="text" name="fage1"><br>
+        <label for="faddress1">Current Address:</label><br>
+        <input type="text" name="faddress1"><br><br>
+        <input class="button2" type="submit" value="Sign Contract Now">
+    </form>
+    <br>
+    <p class="p2"><i>"It’s the questions we can’t answer that teach us the most. They teach us how to think."</i> - The Wiseman's Fear (Kingkiller Chronicles)</p> <br>
+    <img src="https://i.ibb.co/Yb11xYy/FooterN.png" width=100%>
+</body>
 
-     <h3> Please fill in the following details to get started:</h3>
-
-<form action="SFDC_Sign.php" method="post">
-
-  <label for="fname1">Full Name:</label><br>
-  <input type="text" name="fname1"><br>
-
-  <label for="femail1">Email:</label><br>
-  <input type="text" name="femail1"><br>
-
-  <label for="fage1">ABN</label><br>
-  <input type="text" name="fage1"><br>
-
-  <label for="faddress1">Current Address:</label><br>
-  <input type="text" name="faddress1"><br><br>
-
-   <input class = "button2" type="submit" value="Sign Contract Now">
-</form> 
-
-<br>
-<p class = "p2"><i>"It’s the questions we can’t answer that teach us the most. They teach us how to think."</i> - The Wiseman's Fear (Kingkiller Chronicles)</p> <br>
-<img src="https://i.ibb.co/Yb11xYy/FooterN.png"  width = 100%>
-    </body>
 </html>
