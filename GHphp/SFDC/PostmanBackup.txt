@@ -1,0 +1,40 @@
+PostmanBackup.txt
+
+Template Send: {{API Base URL}}accounts/{{Account ID}}/envelopes
+https://demo.docusign.net/restapi/v2.1/accounts/4fbaccb3-876d-42f1-bac3-5677d9067c5f/envelopes
+
+
+{
+    "emailSubject": "Please Sign",
+    "templateId": "369e0018-da77-4050-a8df-db0d77f21f4c",
+    "templateRoles": [{
+        "email": "jo.winters2290@gmail.com",
+        "name": "Jo Wind",
+        "roleName": "Customer",
+          "clientUserId": 1,
+        "tabs": {
+            "textTabs": [{
+                "tabLabel": "ABN",
+                "value": "123445"
+            }, 
+            {
+            "tabLabel": "Current_Address",
+                "value": "45 Victoria St"
+            }]
+        }
+    }],
+    "status": "sent"
+}
+
+
+Create Recipient View: {{API Base URL}}accounts/{{Account ID}}/envelopes/{{Envelope ID}}/views/recipient
+https://demo.docusign.net/restapi/v2.1/accounts/
+4fbaccb3-876d-42f1-bac3-5677d9067c5f/envelopes/{{Envelope ID}}/views/recipient
+
+{
+  "authenticationMethod": "email",
+  "email": "jo.winters2290@gmail.com",
+  "returnUrl": "https://www.google.com",
+  "userName": "Jo Wind",
+  "clientUserId": "1"
+}
