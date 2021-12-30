@@ -1,11 +1,16 @@
 <?php
+
+
+// Removing username and email from Recipient View
+
+
 $name1 = $_POST["fname1"];
 $email1 = $_POST["femail1"];
 $age1 = $_POST["fage1"];
 $address1 = $_POST["faddress1"];
 
-
 $curl = curl_init();
+
 
 curl_setopt_array($curl, array(
   CURLOPT_URL => 'https://demo.docusign.net/restapi/v2.1/accounts/4fbaccb3-876d-42f1-bac3-5677d9067c5f/envelopes',
