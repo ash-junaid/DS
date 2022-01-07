@@ -3,7 +3,7 @@ $name1 = $_POST["fname1"];
 $email1 = $_POST["femail1"];
 $age1 = $_POST["fage1"];
 $address1 = $_POST["faddress1"];
-
+$token = "eyJ0eXAiOiJNVCIsImFsZyI6IlJTMjU2Iiwia2lkIjoiNjgxODVmZjEtNGU1MS00Y2U5LWFmMWMtNjg5ODEyMjAzMzE3In0.AQoAAAABAAUABwCAZMY_k9HZSAgAgKTpTdbR2UgCAM2-DigiKy1Lk5aiHJOP1HsVAAEAAAAYAAoAAAAFAAAAUQAAACsAAAAtAAAALwAAADEAAAAyAAAAOAAAADMAAAA1AAAADQAkAAAAOWM3YjUzM2ItYWFjNy00YTBhLTljZDAtYjZjNzQwZjE0YTdjIgAkAAAAOWM3YjUzM2ItYWFjNy00YTBhLTljZDAtYjZjNzQwZjE0YTdjMACAi7ISbNHZSDcA4C-CYxk0m0W2Buyqt8xSSg.qk7yzFZL_N2jsUC074nEw8bezM7dR_5uIAM8B64cfCZOOR_VWKe0DfsJnDFGE_v_S0ZLbg3qbzbNESu7G3xPd7trRhzZiBrPEbjkVLXUEMkn6ealcyB2PDds3vbdqRMliAwgGgje0nv6RCY04yq98Y2jv5NA0_XL7HwtxRFNO8degRt8QFoRmsO--qqaJN9Oke0PK1moFx8SYcV8TbW6z7TuhCGG3rxF0mrRbTM4eyNHizC_3mf8V2-_xDXGSWrweXgWDt1Qz0aCXARmkXI9gDrNN95qxEK0t1yEqJeyB-hM66voFBvaPjEo5uciUW96qSvSmYphFSGf9ARba7qG8g";
 
 $curl = curl_init();
 
@@ -18,7 +18,7 @@ curl_setopt_array($curl, array(
   CURLOPT_CUSTOMREQUEST => 'POST',
   CURLOPT_POSTFIELDS =>"{\n    \"accountId\": \"10899188\",\n    \"emailSubject\": \"API Example - Populating Data SFDC\",\n    \"templateId\": \"369e0018-da77-4050-a8df-db0d77f21f4c\",\n    \"templateRoles\": [{\n        \"email\": \"{$email1}\",\n        \"name\": \"{$name1}\",\n        \"clientUserId\": 1,\n        \"roleName\": \"Customer\",\n        \"tabs\": {\n            \"textTabs\": [{\n                \"tabLabel\": \"Current_Address\",\n               \"value\": \"{$address1}\"\n            }, \n            {\n                \"tabLabel\": \"ABN\",\n                \"value\": \"{$age1}\"\n            }]\n        }\n    }],\n    \"status\": \"sent\"\n}",
   CURLOPT_HTTPHEADER => array(
-    'Authorization: Bearer eyJ0eXAiOiJNVCIsImFsZyI6IlJTMjU2Iiwia2lkIjoiNjgxODVmZjEtNGU1MS00Y2U5LWFmMWMtNjg5ODEyMjAzMzE3In0.AQoAAAABAAUABwCAoZwHVcvZSAgAgOG_FZjL2UgCAM2-DigiKy1Lk5aiHJOP1HsVAAEAAAAYAAoAAAAFAAAAUQAAACsAAAAtAAAALwAAADEAAAAyAAAAOAAAADMAAAA1AAAADQAkAAAANTBiZGI4OTItOWM3Yi00NGNkLWI2Y2MtZDk0YTg2Y2U2MzJhIgAkAAAANTBiZGI4OTItOWM3Yi00NGNkLWI2Y2MtZDk0YTg2Y2U2MzJhMAAADsDyVMvZSDcA4C-CYxk0m0W2Buyqt8xSSg.yyKTssVnpnMRRWkYX0aovmKshpzuYyR47Ls5LiUXec1TR5kGXPXG7q4l6RrkBDEb6YlyHXMrDEdMIACDGP6GitEF88sNK6d0tVR1GZXyc6EhCzICvIbldMjnGKVQx0vu3GZqlzTnAdKRCtgnmP87JKSUH4emOwaWDw8byRFBN6vNvbkOM5dBTkDA20re1qEOgkTHferOAqph-fr8kUPDfYQqxWPjTtK5LEd7eoxE74XuimH4r5EYzuI0n28QOoePkiIX7_VIgkmj_bsXa24hUP8MnPsG4KiC7od2KQaq4_CqeihzY3FZ-tVsAsbVL3fU87uhll-aJ5b4-iXF4cdY6w',
+    'Authorization: Bearer ' . $token . '',
     'Content-Type: application/json'
   ),
 ));
@@ -49,7 +49,7 @@ curl_setopt_array($curl, array(
 
 CURLOPT_HTTPHEADER => array(
     'Accept: application/json',
-    'Authorization: Bearer eyJ0eXAiOiJNVCIsImFsZyI6IlJTMjU2Iiwia2lkIjoiNjgxODVmZjEtNGU1MS00Y2U5LWFmMWMtNjg5ODEyMjAzMzE3In0.AQoAAAABAAUABwCAoZwHVcvZSAgAgOG_FZjL2UgCAM2-DigiKy1Lk5aiHJOP1HsVAAEAAAAYAAoAAAAFAAAAUQAAACsAAAAtAAAALwAAADEAAAAyAAAAOAAAADMAAAA1AAAADQAkAAAANTBiZGI4OTItOWM3Yi00NGNkLWI2Y2MtZDk0YTg2Y2U2MzJhIgAkAAAANTBiZGI4OTItOWM3Yi00NGNkLWI2Y2MtZDk0YTg2Y2U2MzJhMAAADsDyVMvZSDcA4C-CYxk0m0W2Buyqt8xSSg.yyKTssVnpnMRRWkYX0aovmKshpzuYyR47Ls5LiUXec1TR5kGXPXG7q4l6RrkBDEb6YlyHXMrDEdMIACDGP6GitEF88sNK6d0tVR1GZXyc6EhCzICvIbldMjnGKVQx0vu3GZqlzTnAdKRCtgnmP87JKSUH4emOwaWDw8byRFBN6vNvbkOM5dBTkDA20re1qEOgkTHferOAqph-fr8kUPDfYQqxWPjTtK5LEd7eoxE74XuimH4r5EYzuI0n28QOoePkiIX7_VIgkmj_bsXa24hUP8MnPsG4KiC7od2KQaq4_CqeihzY3FZ-tVsAsbVL3fU87uhll-aJ5b4-iXF4cdY6w',
+    'Authorization: Bearer ' . $token . '',
     'Content-Type: application/json',
     'Cookie: acctLogin=True'
   ),
