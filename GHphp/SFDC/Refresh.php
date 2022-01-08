@@ -17,6 +17,9 @@ $result = curl_exec($ch);
 if (curl_errno($ch)) {
     echo 'Error:' . curl_error($ch);
 }
-echo $result;
+$new_token=explode("\"", $result);
+//echo $result;
+
+echo $new_token[3];
 curl_close($ch);
 ?>
