@@ -3,7 +3,7 @@
 //$email1 = $_POST["cemail1"];
 //$name1 = $_POST["cname1"];
 $company1 = "Company 123";
-$email1 = "jo.customer2290@gmail.com"
+$email1 = "jo.customer2290@gmail.com";
 $name1 = "JJ Abrams";
 
 $curl = curl_init();
