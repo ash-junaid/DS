@@ -1,0 +1,9 @@
+OAuth (returns Access Token)
+
+https://account-d.docusign.com/oauth/auth?response_type=code&scope=signature+spring_read+spring_write+extended&client_id=836aba5b-0525-46d5-9bfb-7dcbf4179b30&redirect_uri=https://www.docusign.com.au/
+
+Scopes: signature spring_read spring_write extended
+
+IK: 836aba5b-0525-46d5-9bfb-7dcbf4179b30
+
+Redirect URI: https://www.docusign.com.au/

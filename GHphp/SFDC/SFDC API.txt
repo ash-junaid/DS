@@ -9,6 +9,9 @@ Redirect URI: https://docusign.github.io/postman-esign-api-collection/
 Auth Code:
 https://account-d.docusign.com/oauth/auth?response_type=code&scope=signature&client_id=50bdb892-9c7b-44cd-b6cc-d94a86ce632a&redirect_uri=https://docusign.github.io/postman-esign-api-collection/
 
+https://account-d.docusign.com/oauth/auth?response_type=code&scope=signature&client_id=50bdb892-9c7b-44cd-b6cc-d94a86ce632a&redirect_uri=https://www.docusign.com.au/
+
+
 JWT:
 https://account-d.docusign.com/oauth/auth?response_type=code&scope=signature%20impersonation&client_id=50bdb892-9c7b-44cd-b6cc-d94a86ce632a&redirect_uri=https://docusign.github.io/postman-esign-api-collection/
 
