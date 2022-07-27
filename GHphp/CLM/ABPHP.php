@@ -20,6 +20,7 @@ $NT = "";
 $QLD = "";
 $TAS = "";
 $authenticationGuid = "3735f1af-652d-4920-987b-dfcbc1c6b97f";
+$xmlns = "http://abr.business.gov.au/ABRXMLSearchRPC/literalTypes";
 $curl = curl_init();
 
 curl_setopt_array($curl, array(
@@ -35,16 +36,22 @@ curl_setopt_array($curl, array(
 ));
 
 $response = curl_exec($curl);
-//$NewXML = new SimpleXMLElement($response);
+$NewXML = new SimpleXMLElement($response);
 //$ABN = $NewXML->xpath('//ABRPayloadSearchResults/response/searchResultsList/searchResultsRecord/ABN/identifierValue');
 
 //$ABN = $NewXML->ABRPayloadSearchResults[0]->response->searchResultsList->searchResultsRecord->ABN->identifierValue;
 //$ABN = $response->xpath('//ABN/identifierValue');
-echo $response;
+
+//$ABN = $response->xpath('abr:ABRPayloadSearchResults/abr:response/abr:searchResultsList/abr:searchResultsRecord/abr:ABN/abr:identifierValue');
+$ABN = $NewXML->xpath('$xmlns:ABRPayloadSearchResults/$xmlns:response/$xmlns:searchResultsList/$xmlns:searchResultsRecord/$xmlns:ABN/$xmlns:identifierValue');
+
 //$xml1 = new SimpleXMLElement($response);
 
-
-//echo json_encode($response);
 curl_close($curl);
+
+//echo $response;
+echo json_decode($ABN);
+
+//echo $NewXML;
 
 
