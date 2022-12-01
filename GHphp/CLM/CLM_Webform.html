@@ -32,18 +32,29 @@
   
   </select><br>
 
-<input type="button" class="button0" name="answer" value="Enter Bank Details" onclick="showDiv()" /><br>
+<input type="button" class="button0" name="answer" value="Enter Business Details" onclick="showDiv()" /><br>
 <div id="welcomeDiv" style="display:none;"> 
 
   <label for="Bank">Bank: </label>
   <input id="Bank">
   <label for="BSB">BSB: </label>
   <input id="BSB" style="width: 6em;">
-</div>
-          <br>
-           
+
+          <br><br>
+<label for="busname1">Business Name:</label><br>
+<select class="input1" name="busname1">
+    <option  value="Nothing"></option>
+    <option  value="Orange">Orange Limited</option>
+  </select>
+  <label for="postcode1">Post Code:</label>
+  <select class="input1" name="postcode1">
+    <option  value="Nothing"></option>
+    <option  value="2300">2300</option>
+    
+  </select>
         <br>
-  <br><br>
+  </div>
 </form>
+<br>
 <input class="button2" type="submit" value="Submit Request">
 </body></html>
