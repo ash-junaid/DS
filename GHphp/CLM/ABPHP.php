@@ -7,10 +7,10 @@
 // Raw URL: https://abr.business.gov.au/abrxmlsearchRPC/AbrXmlSearch.asmx/ABRSearchByNameSimpleProtocol?name=orange&postcode=2300&legalName=&tradingName=&NSW=&SA=&ACT=&VIC=&WA=&NT=&QLD=&TAS=&authenticationGuid=3735f1af-652d-4920-987b-dfcbc1c6b97f
 
 header('Content-Type: application/xml');
-$name = "orange";
-$postcode = "2300";
+$name = "Big Name Brands";
+$postcode = "2122";
 $legalName = "";
-$tradingName = "";
+$tradingName = "Big Name Brands";
 $NSW = "";
 $SA = "";
 $ACT= "";
@@ -49,8 +49,8 @@ $ABN = $NewXML->xpath('$xmlns:ABRPayloadSearchResults/$xmlns:response/$xmlns:sea
 
 curl_close($curl);
 
-//echo $response;
-echo json_decode($ABN);
+echo $response;
+//echo json_decode($ABN);
 
 //echo $NewXML;
 

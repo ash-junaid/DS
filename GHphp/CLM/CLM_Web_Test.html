@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+
+
+<head>
+    
+         <script>
+showDiv() {
+   document.getElementById('welcomeDiv').style.display = "block";
+}
+</script>
+</head>
+
+<link rel="stylesheet" href="SEstyles.css">
+        <img src="https://i.ibb.co/f4KHnz2/HeaderN.png" width=100% alt="Girl in a jacket">
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"> 
+    <link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css2?family=Maven+Pro" />
+
+
+
+<body>
+  
+   
+    <h2>CLM API Demo</h2> 
+    <h4>Junaid Ashraf - Solution Engineer</h4>
+    <h3> Please fill in the following details to get started:</h3>
+    
+    <form action="CLM-API.php" method="post" >
+        <label for="fname1">Full Name:</label><br>
+        <input class="input1" type="text" name="fname1"><br>
+        <label for="femail1">Email:</label><br>
+        <input class="input1" type="text" name="femail1"><br>
+        <label for="fcompany1">Company</label><br>
+        <input class="input1" type="text" name="fcompany1"><br>
+        <label for="GG1">Governing Law:</label><br>
+  <select class="input1" name="gname1">
+    <option  value="AU: This is the governing law for Australia">Australia</option>
+    <option  value="NZ: This is the governing law for New Zealand">New Zealand</option>
+    <option  value="Global: This is the governing law for all other countries">Global</option>
+  
+  </select>
+  <br>
+    <label for="fbsb">BSB:</label><br>
+        <input class="input1" type="text" name="fbsb">
+<br>
+
+<div id="welcomeDiv" style="display:none;"> 
+        <input class="input1" type="text" name="fbank" value="Commonwealth Bank Australia">
+    </div>
+    
+  <br><br>
+        
+        <input class="button2" type="submit" value="Submit Request">
+    </form>
+    <input type="button" class="button1" name="answer" value="Bank Name" onclick="showDiv()" />
+    <br>
+    <p class="p2"><i>"It’s the questions we can’t answer that teach us the most. They teach us how to think."</i> - The Wiseman's Fear (Kingkiller Chronicles)</p> <br>
+  
+
+</body>
+
+
+
+</html>

@@ -1,36 +1,26 @@
 body {
     background-color: #027299;
     color: azure;
+     font-family: Maven Pro;
     font-size: 1.1em;
-}
-h1 {
-    color: coral;
-}
-body, h1, h2, h3, h4, h5, h6  {
-  font-family: Arial, Helvetica, sans-serif ;
-}
-body {
- background: url(https://i.ibb.co/hKhnHsn/BG1.jpg);
+     background: url(https://i.ibb.co/hKhnHsn/BG1.jpg);
   background-repeat: no-repeat;
   background-size: 100%;
-  }
-.p2 {
-  font-family: Arial, Helvetica, sans-serif;
 }
+
+
+h1, h2, h3, h4, h5, h6  {
+  font-family: Maven Pro;
+}
+
+
 
 .button2 {
-  font-size: 15px;
-  font-family: Arial, Helvetica, sans-serif;
+  font-size: 25px;
+   font-family: Maven Pro;
+  color: rgb(0, 0, 0);
   background: #F16522;
-  padding: 10px 10px; 
   text-align: center; 
-  width: 160px; 
+  width: 560px; 
 }
-
-#intro {
-    font-size: 1.3em;
-}
-.colorful {
-    color: orange;
-}
-
+ 

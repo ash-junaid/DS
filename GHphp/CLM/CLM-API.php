@@ -4,6 +4,7 @@ $company1 = $_POST["fcompany1"];
 $email1 = $_POST["femail1"];
 $name1 = $_POST["fname1"];
 $glaw = $_POST["gname1"];
+$date1 = date("d/m/Y");
 $TY = "Thanks for your submission. Please check your Email Inbox for further updates.";
 $Err = "Cannot start workflow. Please refresh Access Token.";
 //$company1 = "Company 123";
@@ -11,7 +12,7 @@ $Err = "Cannot start workflow. Please refresh Access Token.";
 //$name1 = "JJ Abrams";
 
 $postData = [ "Name" => "API Workflow",
-              "Params" => "<root><Company>{$company1}</Company><Email>{$email1}</Email><Contact_Name>{$name1}</Contact_Name><Governing_LawText>{$glaw}</Governing_LawText></root>"
+              "Params" => "<root><Company>{$company1}</Company><Email>{$email1}</Email><Contact_Name>{$name1}</Contact_Name><Effective_Date>{$date1}</Effective_Date><Governing_LawText>{$glaw}</Governing_LawText></root>"
             ];
 
 

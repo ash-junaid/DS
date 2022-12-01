@@ -1,0 +1,62 @@
+body {
+   
+background: url(https://i.ibb.co/hKhnHsn/BG1.jpg);
+    font-size: 1em;
+    font-family: "Maven Pro";
+     background-repeat: no-repeat;
+  background-size: 100%;
+  color: azure;
+  font-size: 1.05em;
+
+}
+
+.label {
+    color: #020032;
+}
+.input1 {
+    font-size: 1.05em;
+}
+.input2 {
+    font-size: 1.05em;
+    width: 15%;
+
+
+}
+.button1 {
+    font-size: 12px;
+    font-family: "Maven Pro";
+    background: #F06523;
+    padding: 5px 5px;
+    text-align: center;
+    width: 150px;
+    position: relative;
+    top: -30px;
+    left: 220px;
+}
+.button0 {
+    font-size: 14px;
+    font-family: "Maven Pro";
+    background: #F06523;
+    padding: 5px 5px;
+    text-align: center;
+    width: 150px;
+    position: relative;
+    top: -30px;
+    left: 150px;
+}
+.button2 {
+    font-size: 16px;
+    font-family: "Maven Pro";
+    background: #F06523;
+    padding: 10px 10px;
+    text-align: center;
+    width: 150px;
+    
+    top: 470px;
+    left: 155px;
+}
+#welcomeDiv {
+    font-size: 1.05em;
+    font-family: "Maven Pro";
+}
+
