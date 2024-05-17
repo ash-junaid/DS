@@ -1,46 +1,66 @@
 <!DOCTYPE html>
-<html>
-    <head>
-    <style>
-.button2 {
-  font-size: 15px;
-  font-family: Arial, Helvetica, sans-serif;
-  color: rgb(0, 0, 0);
-  background: #F16522;
-  padding: 10px 10px; 
-  text-align: center; 
-  width: 160px; 
-}
+<html lang="en">
 
-.form1 {  background-color: #E3E5E0; color: black;}
-
-</style>
-   <img src="https://i.ibb.co/f4KHnz2/HeaderN.png" width = 100% alt="Girl in a jacket">
-
-        <link rel="stylesheet" href="SBstyles.css">
-        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-    </head>
-    <body>
-     <h2>CLM Powerform Demo</h2> 
-     <h4>Junaid Ashraf - Solution Engineer</h4> <br>
-
-     <h3> Please fill in the following details to get started:</h3>
-    <form class = "form1"  action="https://demo.docusign.net/Member/PowerFormSigning.aspx" method="GET" >
-    <input type="hidden" name="PowerFormId" value="3d09d233-2303-45b3-9a27-9a9ddbd8dc76">
+<head>
+     
 
 
-        <p><label>Name: </label><input type="text"      name="Signer 1_UserName" </p>
-        <p><label>Email: </label><input type="text"     name="Signer 1_Email" </p>
-        <p><label>Company Name: </label><input type="text"     name="Company_Name" </p>
-         <p><label>Address: </label><input type="text"     name="Address" </p>
-          <p><label>Contract Date: </label><input type="text"      name="Contract_Date" </p>
-       
-       
-<br><br>
-        <input class = "button2" type="submit" name="Submit"/>
-      </form>
-<br>
-<p class = "p2"><i>"It’s the questions we can’t answer that teach us the most. They teach us how to think."</i> - The Wiseman's Fear (Kingkiller Chronicles)</p> <br>
 
-    </body>
+<script src="https://ajax.aspnetcdn.com/ajax/jQuery/jquery-1.5.min.js" type="text/javascript"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.8.9/jquery-ui.min.js" type="text/javascript"></script>
+    <script src = "show_bank.js"></script>
+    <script src = "BSB_Lookup.js"></script> 
+  
+
+<link rel="stylesheet" href="SBstyles2.css">
+<header id="header">
+    <img id="header-image" src="https://i.ibb.co/vcbzs5z/HD3.png" alt="Menu">
+    <nav>
+        <ul>
+            <li><a href="https://docs.google.com/presentation/d/1RjxFQnZi4XXKzt_LNQuAJ_sZ4X-bWb4E_O3l1XxXOEI/edit?usp=sharing" target="_blank">Demo Scenarios</a></li>
+            <li><a href="https://docs.google.com/presentation/d/1kwQWuGr30PVQDrJV7fAj7lQ_QWJ7Pb4m/edit?usp=sharing&ouid=113301192688785408788&rtpof=true&sd=true" target="_blank">SA Engagement Process</a></li>
+            <li class="dropdown">
+                <a href="#">More</a>
+                <div class="dropdown-content">
+                    <a href="#build-demo">Build this demo 101</a>
+                    <!-- Add more dropdown items as needed -->
+                </div>
+            </li>
+        </ul>
+    </nav>
+</header>
+
+
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"> 
+    <link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css2?family=Maven+Pro" />
+
+</head>
+
+<body>
+
+
+
+    <h2>CLM + Powerform Demo</h2>
+    
+
+    <h3>Please fill in the following details to get started</h3>
+    <form class="form1" action="https://na2.docusign.net/Member/PowerFormSigning.aspx" target="_blank" method="GET">
+        <input type="hidden" name="PowerFormId" value="02082dd5-308c-4eec-b053-a2b6c54f7721">
+
+        <p><label>Name</label><input class="input1" type="text" name="Signer1_UserName"></p>
+        <p><label>Email</label><input class="input1" type="text" name="Signer1_Email"></p>
+        <p><label>Company Name</label><input class="input1" type="text" name="Company_Name"></p>
+        <p><label>Address</label><input class="input1" type="text" name="Address"></p>
+        <p><label>Contract Date</label><input class="input1" type="text" name="Contract_Date"></p>
+
+        <div class="button-container">
+            <input class="button2" type="submit" name="Submit" />
+        </div>
+    </form>
+
+    
+</body>
+<footer id="footer">
+    <p>&copy; 2024 Solution Architecture</p>
+</footer>
 </html>
