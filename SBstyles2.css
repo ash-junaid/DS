@@ -1,0 +1,189 @@
+#header-image {
+    width: 100%;
+    height: auto;
+    max-width: 100%; /* Ensures image doesn't exceed its original size */
+    display: block; /* Ensures image behaves like a block element */
+}
+
+body {
+    background-color: #027299;
+    color: azure;
+    font-family: Maven Pro;
+    font-size: 1.1em;
+    background: url(https://i.ibb.co/D5TqSPB/BG3.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin-top: 100px;
+}
+
+
+h1, h2, h3, h4, h5, h6  {
+  font-family: Maven Pro;
+  text-align: center;
+}
+
+
+
+
+ 
+ .form1 {
+            max-width: 750px; /* Set the max-width to a specific pixel value */
+            margin: 20px auto; /* Centering the form */
+             background-color: #222222;/* Dark background color for the form */
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+        }
+
+        .form1 p {
+            margin-bottom: 20px;
+        }
+
+        .form1 label {
+            display: block;
+            margin-bottom: 5px;
+            color: #ccc;
+        }
+
+        .form1 .input1 {
+            width: 100%;
+            padding: 12px;
+            border: 1px solid #555;
+            border-radius: 4px;
+            background-color: #444; /* Darker background color for input fields */
+            color: white;
+            font-size: 14px;
+            box-sizing: border-box;
+        }
+
+        .form1 .input2 {
+            width: 50%;
+            padding: 12px;
+            border: 1px solid #555;
+            border-radius: 4px;
+            background-color: #444; /* Darker background color for input fields */
+            color: white;
+            font-size: 14px;
+            box-sizing: border-box;
+        }
+.form1 .button2 {
+            padding: 10px 20px;
+            background-color: #D5FF00; /* Button's background color */
+            color: black;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            width: 400px;
+            font-weight: bold; /* Added bold text */
+        }
+
+/* Dropdown styling */
+.dropdown {
+    position: relative;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: rgba(0, 0, 0, 0.5); /* Transparent black background */
+    min-width: 160px;
+    z-index: 100;
+    left: 0; /* Align dropdown content to the left */
+}
+
+.dropdown-content a {
+    display: block;
+    padding: 10px;
+    color: white;
+    text-decoration: none;
+}
+
+.dropdown-content a:hover {
+    background-color: rgba(255, 255, 255, 0.1); /* Hover background color */
+}
+
+/* Show dropdown content on hover */
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+/* Header and Navigation styling */
+#header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 1000;
+}
+
+#header img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+}
+
+nav {
+    position: fixed;
+    top: 100px; /* Adjust as needed depending on the height of your header image */
+    left: 0;
+    width: 100%;
+   
+    z-index: 900;
+}
+
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    padding-left: 20px; /* Add left padding to align menu items */
+}
+
+nav ul li {
+    display: inline-block; /* Display menu items horizontally */
+    margin-right: 20px;
+}
+
+nav ul li:last-child {
+    margin-right: 0;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+}
+
+nav ul li a:hover {
+    text-decoration: underline;
+}
+
+/* Add margin to content to prevent it from being overlapped by the fixed elements */
+.content {
+    margin-top: 200px; /* Adjust as needed depending on the height of your header image and navigation */
+}
+
+/* Footer styling */
+#footer {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.5); /* Transparent black background */
+    color: white;
+    text-align: center;
+    padding: 10px 0; /* Add padding top and bottom */
+    z-index: 1000; /* Ensure the footer stays above other content */
+}
+
+/* Reset default margin and padding for the <p> tag */
+#footer p {
+    margin: 0;
+    padding: 0;
+    text-align: center;
+}
+
+
+
+
+
+
+
